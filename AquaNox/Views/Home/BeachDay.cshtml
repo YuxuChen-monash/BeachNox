@@ -1,0 +1,289 @@
+﻿
+<div class="container">
+    <p>
+        <br />
+        <br />
+        <br />
+    </p>
+
+</div>
+
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-7 heading-section text-center ftco-animate">
+            <span class="subheading">Beach</span>
+            <h3>Find Beach in Melbourne</h3>
+        </div>
+    </div>
+    <section class="ftco-counter img" id="section-counter">
+        <div clas s="container">
+            <div class="row pt-md-5">
+                <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+                    <div class="block-18 py-md-5 mb-md-4">
+                        <div class="text text-border d-flex 
+							 ">
+                            <strong class="number" data-number="30">0</strong>
+                            <span>Patrolled beaches <br>in Melbourne</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+                    <div class="block-18 py-md-5 mb-md-4">
+                        <div class="text text-border d-flex align-items-center">
+                            <strong class="number" data-number="85">0</strong>
+                            <span>Non – Fatal drowning incidents<br> of 5-14 year olds in Victoria from 2014-19</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+                    <div class="block-18 py-md-5 mb-md-4">
+                        <div class="text text-border d-flex align-items-center">
+                            <strong class="number" data-number="31">0</strong>
+                            <span>Unspecified drowning and<br> submersion</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+                    <div class="block-18 py-md-5 mb-md-4">
+                        <div class="text d-flex align-items-center">
+                            <strong class="number" data-number="14">0</strong>
+                            <span>Drowning and submersion following fall<br> into natural water </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class='tableauPlaceholder' id='viz1599379249483' style='position: relative; text-align: center'>
+        <noscript>
+            <a href='#'>
+                <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Me&#47;MelbounreBeaches&#47;Dashboard1&#47;1_rss.png' style='border: none' />
+            </a>
+        </noscript>
+        <object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' /> <param name='site_root' value='' />
+            <param name='name' value='MelbounreBeaches&#47;Dashboard1' />
+            <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Me&#47;MelbounreBeaches&#47;Dashboard1&#47;1.png' />
+            <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' /><param name='filter' value='publish=yes' />
+        </object>
+    </div>
+
+    <!DOCTYPE html>
+<html>
+<head>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcFlcFdqwCmqONdMsSrQwJWatt7e7lT8A
+	&callback=initMap" async defer></script>
+</head>
+<style >
+	html, body {
+		height: 100%;
+	}
+
+	#map {
+		margin-left: 0px;
+		height: 80%;
+		width: 870px;
+	}
+</style>
+
+<body>
+	<button id="first-btn" onclick="myfunction()">Click me</button>
+	<h1 id="test1" style="display: ''"> Test1</h1>
+	<h2 id="test2" style="display: ''"> Test2</h2>
+	<div id='map' ></div>
+	<div id='info'>
+		<div style="width: 300px;"><iframe style="display: block;" src="https://cdnres.willyweather.com.au/widget/loadView.html?id=59360" width="300" height="228" frameborder="0" scrolling="no"></iframe><a style="display: block;z-index: 1;text-indent: -9999em;position: relative;margin: -20px 0 0 0;height: 20px" href="https://www.willyweather.com.au/vic/melbourne/brighton-beach.html" rel="nofollow">brighton beach weather forecast</a></div>
+
+		<table> 
+			<thead>
+				<tr>
+					<th>Beach</th>
+					<th>Lifeguard</th>
+					<th>Safety rating</th>
+					<th>Toilet</th>
+					<th>Playground</th>
+				</tr>
+			</thead>
+			<tbody id="tbd-info">
+				<tr id="row-stkilda">
+					<th>St kilda</th>
+					<th>Yes</th>
+					<th>3</th>
+					<th>Yes</th>
+					<th>Yes</th>
+				</tr>
+
+				<tr id="row-brighton">
+					<th>Brighton</th>
+					<th>Yes</th>
+					<th>2</th>
+					<th>No</th>
+					<th>Yes</th>
+				</tr>
+			</tbody>
+		</table>
+
+		
+		
+	</div>
+
+	<script type="text/javascript">
+		hideAlltbody();
+		function showSection(show){
+			hideAlltbody();
+			
+			document.getElementById(show).style.display="";
+		}
+
+		function hideAlltbody(){
+			var nodes = document.getElementById('tbd-info').childNodes;
+			for(var i=0; i<nodes.length; i++) {
+				if (nodes[i].nodeName.toLowerCase() == 'tr') {
+					nodes[i].style.display = 'none';
+				}
+			}
+		}
+
+		function initMap() {
+			map = new google.maps.Map(document.getElementById("map"),{
+				center:{lat: -37.815018, lng: 144.946014},
+				zoom: 12
+			})
+
+			var markerStkilda = new google.maps.Marker({
+				position:{lat:-37.8679,lng:144.9740},
+				map:map,
+				icon:"pin.png"
+			});
+
+			markerStkilda.addListener("click", function(){
+				showSection("row-stkilda");
+				document.getElementById("api-info").setAttribute("src", "https://cdnres.willyweather.com.au/widget/loadView.html?id=59329");
+			})
+
+
+			var markerBrighton = new google.maps.Marker({
+				position:{lat:-37.9311, lng:144.9888},
+				map:map,
+				icon:"pin.png"
+			});
+
+			markerBrighton.addListener("click", function(){
+				showSection("row-brighton");
+				document.getElementById("api-info").setAttribute("src", "https://cdnres.willyweather.com.au/widget/loadView.html?id=59338");
+			})
+
+			
+			var markerDendyStreet = new google.maps.Marker({
+				position:{lat:-37.9212, lng:144.9858},
+				map:map,
+				icon:"pin.png"
+			});
+			var markerSomers = new google.maps.Marker({
+				position:{lat:-38.3979, lng:145.1607},
+				map:map,
+				icon:"pin.png"
+			});
+			var markerSkeletonCreek = new google.maps.Marker({
+				position:{lat:-37.8901, lng:144.8061},
+				map:map,
+				icon:"pin.png"
+			});
+
+			var markerCraigie = new google.maps.Marker({
+				position:{lat:-38.2541, lng:145.0246},
+				map:map,
+				icon:"pin.png"
+			});
+
+			var markerBirdrock = new google.maps.Marker({
+				position:{lat:-38.2511, lng:145.0262},
+				map:map,
+				icon:"pin.png"
+			});
+			var markerDava = new google.maps.Marker({
+				position:{lat:-38.2463, lng:145.027},
+				map:map,
+				icon:"pin.png"
+			});
+			var markerAltona = new google.maps.Marker({
+				position:{lat:-37.872, lng:144.8273},
+				map:map,
+				icon:"pin.png"
+			});
+			var markerMountMarthSouth = new google.maps.Marker({
+				position:{lat:-38.2695, lng:145.0098},
+				map:map,
+				icon:"pin.png"
+			});
+			var markerMountMarthaNorth = new google.maps.Marker({
+				position:{lat:-38.2625, lng:145.0172},
+				map:map,
+				icon:"pin.png"
+			});
+
+			var markerHawker = new google.maps.Marker({
+				position:{lat:-38.2572, lng:145.0226},
+				map:map,
+				icon:"pin.png"
+			});
+
+			
+			var markerPointGellibrand = new google.maps.Marker({
+				position:{lat:-37.8714, lng:144.9078},
+				map:map,
+				icon:"pin.png"
+			});
+			
+			var markerWilliamstown = new google.maps.Marker({
+				position:{lat:-37.8696, lng:144.8924},
+				map:map,
+				icon:"pin.png"
+			});
+
+			var markerAltonaBurnsReserve = new google.maps.Marker({
+				position:{lat:-37.8655, lng:144.8497},
+				map:map,
+				icon:"pin.png"
+			});
+			var markerAltonaCresser = new google.maps.Marker({
+				position:{lat:-37.8689, lng:144.8451},
+				map:map,
+				icon:"pin.png"
+			});
+			var markerWerribeeSouth = new google.maps.Marker({
+				position:{lat:-37.9762, lng:144.6914},
+				map:map,
+				icon:"pin.png"
+			});
+			var markerWerribeeSewerFarmNorth = new google.maps.Marker({
+				position:{lat:-37.9894, lng:144.6678},
+				map:map,
+				icon:"pin.png"
+			});
+			var markerWerribeeSewerFarmSouth = new google.maps.Marker({
+				position:{lat:-38.0017, lng:144.6213},
+				map:map,
+				icon:"pin.png"
+			});
+
+		}
+		function myfunction(){
+			//var x = document.getElementById("test1").innerText = "test2";
+			document.getElementById("test1").style.display = 'none';
+
+		}
+	</script>
+</body>
+</html>
+
+</div>
+
+<div>
+    <p> <br /></p>
+</div>

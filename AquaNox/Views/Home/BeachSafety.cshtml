@@ -1,0 +1,352 @@
+﻿<style type="text/css">
+    .myLinkClass:hover {
+        opacity: 0.7;
+    }
+
+
+    img {
+        vertical-align: middle;
+    }
+
+
+    .cursor {
+        cursor: pointer;
+    }
+
+ 
+
+  
+
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 100px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: #555;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+    }
+
+      #myBtn:hover {
+            background-color: #555;
+        }
+</style>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+<section class="hero-wrap hero-wrap-2" style="background-image: url('../images/beach_info.jpg');" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-end">
+            <div class="col-md-9 ftco-animate pb-5">
+                <p class="breadcrumbs"><span class="mr-2"><a href="../Index">Home <i class="fa fa-chevron-right"></i></a></span> <span>Beach safety <i class="fa fa-chevron-right"></i></span></p>
+                <h1 class="mb-3 bread">Bucket Full of Safety</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="ftco-section">
+    <div class="container">
+        <div class=" wrap-about py-md-5 ftco-animate">
+            <div class="heading-section pr-md-5">
+                <p class=" mb-3" style="font-size: 20px;">
+                    Who does not like summers and for the Melbouranians that means fun-filled family days at beaches like St Kilda or Brighton and soaking up all that sun, sand and salty sea air goodness. For the precious little ones, beach day is all about sand castles, buckets and spades, snacks and the list goes on.
+                    But remember dear, before you dive or play at the beaches, you need to have a good grasp on the water safety strategies.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-3 d-flex align-items-stretch ftco-animate cursor:pointer;" onclick="openAdventTab('c1');">
+                <div class="media block-6 services d-block text-center px-3 pb-4">
+                    <div class="icon d-flex justify-content-center align-items-center">
+                        <img class="myLinkClass " src="~/images/inforIcon1.png">
+                    </div>
+                    <div class="media-body py-md-4">
+                        <h2 style="color:#7daec5;">More about safety tips</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex align-items-stretch ftco-animate cursor:pointer;" onclick="openAdventTab('c3');">
+                <div class="media block-6 services d-block text-center px-3 pb-4">
+                    <div class="icon d-flex justify-content-center align-items-center">
+                        <img class="myLinkClass " src="~/images/inforIcon3.png">
+                    </div>
+                    <div class="media-body py-md-4">
+                        <h2 style="color:#7daec5;">Cardio-pulmonary Resuscitation (Emergency Relief)</h2>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex align-items-stretch ftco-animate cursor:pointer;" onclick="openAdventTab('c2');">
+                <div class="media block-6 services d-block text-center px-3 pb-4">
+                    <div class="icon d-flex justify-content-center align-items-center">
+                        <img class="myLinkClass " src="../images/inforIcon2.png">
+
+                        
+                            <h2 style="color:#7daec5;">Beach safety sign</h2>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex align-items-stretch ftco-animate cursor:pointer;" >
+                <div class="media block-6 services d-block text-center px-3 pb-4">
+                    <div class="icon d-flex justify-content-center align-items-center">
+                        <a  href="../Home/Quiz">
+                            <img style="margin-top:40px" class="myLinkClass "src="../images/inforIcon4.png" width="160px" height="160px"/>
+                        </a>
+                    </div>
+                    <div class="media-body py-md-4">
+                        <h2 style="color:#7daec5;">Test Your Knowledge</h2>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-12 ftco-animate">
+
+
+
+
+            <div id="information">
+                <div id="c1" class="adventContainerTab" style=" display: none;padding: 20px">
+
+                    <span onclick="this.parentElement.style.display='none'" style="float: right; color: black; font-size: 35px; cursor: pointer;">&times;</span>
+                    <div class="row">
+                        <div class="col-md-4" style="text-align: center;">
+                            <img src="~/images/infor/1.png" width="99%" height="99%">
+                        </div>
+                        <div class="col-md-4" style="text-align: center;">
+                            <img src="~/images/infor/2.png" width="99%" height="99%">
+                        </div>
+                        <div class="col-md-4" style="text-align: center;">
+                            <img src="~/images/infor/3.png" width="99%" height="99%">
+                        </div>
+
+                    </div>
+                    <p><br /></p>
+
+                    <div class="row">
+                        <div class="col-md-3" style="text-align: center;">
+                            <img src="~/images/infor/4.png" width="99%" height="99%">
+                        </div>
+                        <div class="col-md-3" style="text-align: center;">
+                            <img src="~/images/infor/5.png" width="99%" height="99%">
+                        </div>
+                        <div class="col-md-3" style="text-align: center;">
+                            <img src="~/images/infor/6.png" width="99%" height="99%">
+                        </div>
+                        <div class="col-md-3" style="text-align: center;">
+                            <img src="~/images/infor/7.png" width="99%" height="99%">
+                        </div>
+                    </div>
+                    <p><br /></p>
+
+                    <div class="row">
+
+                        <div class="col-md-4" style="text-align: center;">
+                            <img src="~/images/infor/8.png" width="99%" height="99%">
+                        </div>
+                        <div class="col-md-4" style="text-align: center;">
+                            <img src="~/images/infor/9.png" width="99%" height="99%">
+                        </div>
+                        <div class="col-md-4" style="text-align: center;">
+                            <img src="~/images/infor/10.png" width="99%" height="99%">
+                        </div>
+                    </div>
+                    <p><br /></p>
+                    <div class="row">
+
+                        <div class="col-md-4" style="text-align: center;">
+                            <img src="~/images/infor/11.png" width="99%" height="99%">
+                        </div>
+                        <div class="col-md-4" style="text-align: center;">
+                            <img src="~/images/infor/12.png" width="99%" height="99%">
+                        </div>
+                        <div class="col-md-4" style="text-align: center;">
+                            <img src="~/images/infor/13.png" width="99%" height="99%">
+                        </div>
+
+                    </div>
+                    <p><br /></p>
+                    <div class="row">
+
+                        <div class="col-md-4" style="text-align: center;">
+                            <img src="~/images/infor/14.png" width="99%" height="99%">
+                        </div>
+                        <div class="col-md-4" style="text-align: center;">
+                            <img src="~/images/infor/15.png" width="99%" height="99%">
+                        </div>
+                        <div class="col-md-4" style="text-align: center;">
+                            <img src="~/images/infor/16.png" width="99%" height="99%">
+                        </div>
+
+                    </div>
+
+                    <p> <br /></p>
+                    @*<div class="">
+                        <p class="mb-0">
+                            <a href="~/Home/Quiz" class="btn btn-primary py-3 px-2 px-md-4">Test Your Knowledge</a>
+                        </p>
+                    </div>*@
+
+                </div>
+
+                <div id="c2" class="adventContainerTab" style=" display: none;padding: 20px">
+                    <span onclick="this.parentElement.style.display='none'" style="float: right; color: black; font-size: 35px; cursor: pointer;">&times;</span>
+                    <p style="font-size: 20px;">
+                        Since the beach is a ever changing environment, it can be dangerous to ones who are unaware of the potential hazards. Safety signs and flags are put in place to aware/warn us about ongoing or permanent hazards that are present at the beaches. You should always look out for the beach safety sign board before you step into waters at any beach.
+                    </p>
+
+                    <details>
+                        <summary style="color:#7daec5;font-size: 20px;">Beach safety flags</summary>
+                        <div class="row">
+                            <div class="col-md-12" style="text-align: center;">
+                                <img src="~/images/Sign/FlagsSafety.png" width="95%" height="95%">
+                            </div>
+
+                        </div>
+                    </details>
+
+
+                    <details>
+                        <summary style="color:#7daec5;font-size: 20px;">Warning Signs</summary>
+                        <div class="row">
+                            <div class="col-md-12" style="text-align: center;">
+                                <img src="~/images/Sign/Warning Signs.png" width="95%" height="95%">
+                            </div>
+                        </div>
+                    </details>
+
+
+                    <details>
+                        <summary style="color:#7daec5;font-size: 20px;">Regulatory Signs</summary>
+                        <div class="row">
+                            <div class="col-md-12" style="text-align: center;">
+                                <img src="~/images/Sign/Regulatory sign.png" width="95%" height="95%">
+                            </div>
+                        </div>
+
+
+                    </details>
+
+                    <p> <br /></p>
+                    
+                </div>
+
+                <div id="c3" class="adventContainerTab" style=" display: none;padding: 20px">
+                    <span onclick="this.parentElement.style.display='none'" style="float: right; color: black; font-size: 35px; cursor: pointer;">&times;</span>
+                    <p style="font-size: 20px;">
+                     Attending some training about how to do CPR or other First Aid related courses, usually, local hospitals, fire departments and recreation departments offer CPR training.
+                    </p>
+                    <h5 class="mb-3" style="color:#7daec5;">CPR first steps: call for help and check airway</h5>
+                    <div class="row">
+                       
+                        <div class="col-md-4" style="text-align: center;">
+                            <img src="../images/CPR/CPR1.gif"  width="70%" height="70%">
+                            <p>Remove child and yourself from any danger. If the child is unconscious, not responding or breathing abnormally, call an ambulance.</p>
+                        </div>
+                        <div class="col-md-4" style="text-align: center;">
+                            <img src="../images/CPR/CPR2.gif" width="70%" height="70%">
+                            <p>Check the child’s mouth for anything blocking the airway. This could include his tongue, food, vomit or blood.</p>
+                        </div>
+                        <div class="col-md-4" style="text-align: center;">
+                            <img src="../images/CPR/CPR3.gif" width="70%" height="70%">
+                            <p>If you find a blockage, roll the child onto his side, keeping his top leg bent. This is the recovery position. Clear blockages with your fingers, then check for breathing.</p>
+                        </div>
+                    </div>
+                    <h5 class="mb-3" style="color:#7daec5;">Next CPR steps: breathing</h5>
+                    <div class="row">
+                        <div class="col-md-6" style="text-align: center;">
+                            <img src="../images/CPR/CPR4.gif" width="60%" height="60%">
+                            <p>If there are no blockages and/or you’ve cleared blockages, check for breathing. Look for chest movements, listen for breathing sounds, or feel for breath on your cheek.</p>
+                        </div>
+                        <div class="col-md-6" style="text-align: center;">
+                            <img src="~/images/CPR/CPR5.gif" width="60%" height="60%">
+                            <p>Child breathing normally? Gently roll him onto his side and into the recovery position. Regularly check for breathing until the ambulance arrives.</p>
+                            <p>Child not breathing? Child not responding or child breathing abnormally? Start CPR.</p>
+                        </div>
+                    </div>
+
+
+                    <h5 class="mb-3" style="color:#7daec5;">CPR steps until help arrives: chest compressions and rescue breaths</h5>
+                    <div class="row">
+                        <div class="col-md-4" style="text-align: center;">
+                            <img src="~/images/CPR/CPR7.gif" width="70%" height="70%">
+                            <p>Put the heels of your hands in the centre of the child’s chest. Using the heel of your hand, give 30 compressions at a rate of 100-120 compressions per minute. Each compression should depress the chest by about one third.</p>
+                        </div>
+                        <div class="col-md-4" style="text-align: center;">
+                            <img src="~/images/CPR/CPR8.gif" width="70%" height="70%">
+                            <p>After 30 compressions, take a deep breath, seal your mouth over the child’s mouth, pinch his nose and give two steady breaths. Make sure the child’s head is tilted back to open his airway.</p>
+                        </div>
+                        <div class="col-md-4" style="text-align: center;">
+                            <img src="~/images/CPR/CPR9.gif" width="70%" height="70%">
+                            <p>Keep giving 30 compressions then 2 breaths until medical help arrives. If the child starts breathing and responding, turn him into the recovery position. Keep watching his breathing and be ready to start CPR again at any time.</p>
+                        </div>
+                    </div>
+                    <p> <br /></p>
+                    
+
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+      
+       
+    </div>
+
+     
+</section> 
+
+
+
+
+<script>
+
+   
+
+    function openAdventTab(tabName) {
+        var k, x;
+        x = document.getElementsByClassName("adventContainerTab");
+        for (k = 0; k < x.length; k++) {
+            x[k].style.display = "none";
+        }
+        document.getElementById(tabName).style.display = "block";
+    }
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none ";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
+</script>
+
