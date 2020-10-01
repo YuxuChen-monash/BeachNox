@@ -36,6 +36,14 @@
       #myBtn:hover {
             background-color: #555;
         }
+
+
+    .img-cs {
+        width: 10%;
+        height: 15%;
+        float: left;
+        margin-left: 20px;
+    }
 </style>
 
 
@@ -64,59 +72,72 @@
                 </p>
             </div>
         </div>
+        <div class=" media-body py-md-4">
+            <h2 style="color:#7daec5;">Safety tips</h2>
+        </div>
+  
 
         <div class="row">
-
-            <div class="col-md-3 d-flex align-items-stretch ftco-animate cursor:pointer;" onclick="openAdventTab('c1');">
-                <div class="media block-6 services d-block text-center px-3 pb-4">
-                    <div class="icon d-flex justify-content-center align-items-center">
-                        <img class="myLinkClass " src="~/images/inforIcon1.png">
-                    </div>
-                    <div class="media-body py-md-4">
-                        <h2 style="color:#7daec5;">More about safety tips</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 d-flex align-items-stretch ftco-animate cursor:pointer;" onclick="openAdventTab('c3');">
-                <div class="media block-6 services d-block text-center px-3 pb-4">
-                    <div class="icon d-flex justify-content-center align-items-center">
-                        <img class="myLinkClass " src="~/images/inforIcon3.png">
-                    </div>
-                    <div class="media-body py-md-4">
-                        <h2 style="color:#7daec5;">Cardio-pulmonary Resuscitation (Emergency Relief)</h2>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 d-flex align-items-stretch ftco-animate cursor:pointer;" onclick="openAdventTab('c2');">
-                <div class="media block-6 services d-block text-center px-3 pb-4">
-                    <div class="icon d-flex justify-content-center align-items-center">
-                        <img class="myLinkClass " src="../images/inforIcon2.png">
-                    </div>
-                    <div class="media-body py-md-4">
-                        <h2 style="color:#7daec5;">Beach safety sign</h2>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 d-flex align-items-stretch ftco-animate cursor:pointer;" >
-                <div class="media block-6 services d-block text-center px-3 pb-4">
-                    <div class="icon d-flex justify-content-center align-items-center">
-                        <a  href="../Home/Quiz">
-                            <img style="margin-top:40px" class="myLinkClass "src="../images/inforIcon4.png" width="160px" height="160px"/>
-                        </a>
-                    </div>
-                    <div class="media-body py-md-4">
-                        <h2 style="color:#7daec5;">Test Your Knowledge</h2>
-                    </div>
-                </div>
-            </div>
+        <div class=col-md-1>
 
         </div>
 
+        <div class="col-md-2 d-flex align-items-stretch ftco-animate cursor:pointer;" onclick="openAdventTab('c1');">
+            <a href="#point1">
+            <div class="media block-6 services d-block text-center px-3 pb-4">
+               
+                    <img class="myLinkClass " src="~/images/inforIcon1.png" width="100%" height="100%">
+                
+            </div>
+             </a>
+        </div>
+        <div class="col-md-2 d-flex align-items-stretch ftco-animate cursor:pointer;" onclick="openAdventTab('c3');">
+            <a href="#point2">
+                <div class="media block-6 services d-block text-center px-3 pb-4">
+
+                    <img class="myLinkClass " src="~/images/inforIcon3.png" width="100%" height="100%">
+
+
+                </div>
+                </a>
+        </div>
+
+        <div class="col-md-2 d-flex align-items-stretch ftco-animate cursor:pointer;"onclick="openAdventTab('c4');">
+            <div class="media block-6 services d-block text-center px-3 pb-4">
+               
+                   
+             <img class="myLinkClass " src="~/images/inforIcon5.png" width="100%" height="100%" />
+                    
+              
+
+            </div>
+        </div>
+
+        <div class="col-md-2 d-flex align-items-stretch ftco-animate cursor:pointer;" onclick="openAdventTab('c2');">
+            <div class="media block-6 services d-block text-center px-3 pb-4">
+               
+                    <img class="myLinkClass " src="~/images/inforIcon2.png" width="100%" height="100%">
+                
+            </div>
+        </div>
+        <div class="col-md-2 d-flex align-items-stretch ftco-animate cursor:pointer;">
+            <div class="media block-6 services d-block text-center px-3 pb-4">
+               
+                    <a href="../Home/Quiz">
+                        <img class="myLinkClass " src="~/images/inforIcon4.png" width="100%" height="100%" />
+                    </a>
+                
+            </div>
+        </div>
+        <div class=col-md-1>
+
+        </div>
+
+        </div>
+
+        <HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="100%" color=#7daec5 SIZE=3>
+    
         <div class="col-md-12 ftco-animate">
-
-
 
 
             <div id="information">
@@ -124,7 +145,7 @@
 
                     <span onclick="this.parentElement.style.display='none'" style="float: right; color: black; font-size: 35px; cursor: pointer;">&times;</span>
                     <div class="row">
-                        <div class="col-md-4" style="text-align: center;">
+                        <div id="point1" class="col-md-4" style="text-align: center;">
                             <img src="~/images/infor/1.png" width="99%" height="99%">
                         </div>
                         <div class="col-md-4" style="text-align: center;">
@@ -196,16 +217,16 @@
 
                     <p> <br /></p>
                     @*<div class="">
-                        <p class="mb-0">
-                            <a href="~/Home/Quiz" class="btn btn-primary py-3 px-2 px-md-4">Test Your Knowledge</a>
-                        </p>
-                    </div>*@
+                <p class="mb-0">
+                    <a href="~/Home/Quiz" class="btn btn-primary py-3 px-2 px-md-4">Test Your Knowledge</a>
+                </p>
+            </div>*@
 
                 </div>
 
                 <div id="c2" class="adventContainerTab" style=" display: none;padding: 20px">
                     <span onclick="this.parentElement.style.display='none'" style="float: right; color: black; font-size: 35px; cursor: pointer;">&times;</span>
-                    <p style="font-size: 20px;">
+                    <p id="point2"style="font-size: 20px;">
                         Since the beach is a ever changing environment, it can be dangerous to ones who are unaware of the potential hazards. Safety signs and flags are put in place to aware/warn us about ongoing or permanent hazards that are present at the beaches. You should always look out for the beach safety sign board before you step into waters at any beach.
                     </p>
 
@@ -242,18 +263,19 @@
                     </details>
 
                     <p> <br /></p>
-                    
+
                 </div>
 
                 <div id="c3" class="adventContainerTab" style=" display: none;padding: 20px">
                     <span onclick="this.parentElement.style.display='none'" style="float: right; color: black; font-size: 35px; cursor: pointer;">&times;</span>
                     <p style="font-size: 20px;">
-                     Attending some training about how to do CPR or other First Aid related courses, usually, local hospitals, fire departments and recreation departments offer CPR training.
+                        Attending some training about how to do CPR or other First Aid related courses, usually, local hospitals, fire departments and recreation departments offer CPR training.
                     </p>
                     <h5 class="mb-3" style="color:#7daec5;">CPR first steps: call for help and check airway</h5>
                     <div class="row">
+
                         <div class="col-md-4" style="text-align: center;">
-                            <img src=../images/CPR/CPR1.gif" width="70%" height="70%">
+                            <img src="../images/CPR/CPR1.gif" width="70%" height="70%">
                             <p>Remove child and yourself from any danger. If the child is unconscious, not responding or breathing abnormally, call an ambulance.</p>
                         </div>
                         <div class="col-md-4" style="text-align: center;">
@@ -265,6 +287,7 @@
                             <p>If you find a blockage, roll the child onto his side, keeping his top leg bent. This is the recovery position. Clear blockages with your fingers, then check for breathing.</p>
                         </div>
                     </div>
+                    <p></p>
                     <h5 class="mb-3" style="color:#7daec5;">Next CPR steps: breathing</h5>
                     <div class="row">
                         <div class="col-md-6" style="text-align: center;">
@@ -278,7 +301,7 @@
                         </div>
                     </div>
 
-
+                    <p></p>
                     <h5 class="mb-3" style="color:#7daec5;">CPR steps until help arrives: chest compressions and rescue breaths</h5>
                     <div class="row">
                         <div class="col-md-4" style="text-align: center;">
@@ -295,22 +318,122 @@
                         </div>
                     </div>
                     <p> <br /></p>
-                    
+
 
 
                 </div>
 
+                <div id="c4" class="adventContainerTab" style=" display: none;padding: 20px">
+                    <span onclick="this.parentElement.style.display='none'" style="float: right; color: black; font-size: 35px; cursor: pointer;">&times;</span>
+                    <p style="font-size: 20px;">
+                        There are many fascinating creatures that reside in Australia’s ocean waters. One of them being jellyfish which can easily be seen at the shores or the beaches. Dear children, it is very important for you to avoid them as they can cause painful stings.
+                    </p>
+                    <b style="font-size: 20px;">
+                        TIPS TO PROTECT FROM STINGERS IN TROPICAL WATERS
+                    </b>
+                    <img src="~/images/AquaticLife/AquaticLife1.jpg" width="100%" height="100%">
+                    <p style="font-size: 20px;">
+                        <b> Non-tropical marine stingers-</b> Their stings generally do not cause any threat to life but can bring some discomfort if you are caught in contact with them. The bluebottle is a popular jellyfish around the coastline of Australia. They can be easily identified by seeing their blue, balloon like sail which usually floats/sits above the water and are attached to the long tentacles which are extended below it.
+                    </p>
+                    <b style="font-size: 20px;">
+                        IF STUNG BY NON TROPICAL JELLYFISH STINGS, DO THE FOLLOWING-
+                    </b>
+                    <p></p>
+                    <img src="~/images/AquaticLife/AquaticLife2.jpg" width="100%" height="100%">
+                    <p></p>
+                    <p style="font-size: 20px;">
+                        <b>Tropical marine stingers-</b> Their stingers are known to cause threat to life. Box Jellyfish and Irukandji are classified as dangerous as they have potent toxic stings which can cause serious illness and death in some cases. Special caution must be taken care when entering waters during the ‘stinger season’, which generally runs from November to March.
+                    </p>
+                    <b style="font-size: 20px;">
+                        IF STUNG BY TROPICAL MARINE STINGERS, DO THE FOLLOWING-
+                    </b>
+                    <p></p>
+                    <img src="~/images/AquaticLife/AquaticLife3.jpg" width="100%" height="100%">
+                    <p></p>
+                    <b style="font-size: 20px;">
+                        NOTE – DO NOT TRY STRANGE AND BIZARRE EXPERIMENTS TO RELIEVE PAIN FROM STINGS.
+                    </b>
+                    <p></p>
+                    <div align="center"><img style="text-align: center;" src="~/images/AquaticLife/AquaticLife4.jpg" width="80%" height="80%"></div>
+                    <p><br /></p>
+                    <HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="100%" color=#7daec5 SIZE=3>
+                    <p><br /></p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>
+                                <b>Blue Ringed Octopus-</b> They are another fascinating and beautiful species but are deadly in nature. They can easily hide themselves by camouflaging into the rocks around the beaches or piers. Avoid them by staying away and not interfering their environment. Their bit usually causes numbness of the lips and tongue. It also makes difficult to breathe. Severe untreated bites can even lead to death.
+                            </p>
+                            <b style="font-size: 20px;">If someone is bitten  -</b>
+                            <ul>
+                                <li>
+                                    Dial Emergency contact triple zero (000) immediately.
+                                </li>
+                                <li>
+                                    Seek help if nearby to surf lifesaver/lifeguard.
+                                </li>
+                                <li>
+                                    Proceed with CPR (Cardio-pulmonary resuscitation) if patient has lost their senses.
+                                </li>
+                                <li>
+                                    Apply compression or immobilization bandaging to the area.
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="col-md-6">
+                            <img src="~/images/AquaticLife/AquaticLife5.jpg" width="100%" height="90%">
+
+                        </div>
+
+                    </div>
+
+
+
+
+                    <p><br /></p>
+                    <HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="100%" color=#7daec5 SIZE=3>
+                    <p><br /></p>
+                    <div class="row">
+
+                        <div class="col-md-5">
+                            <img src="~/images/AquaticLife/AquaticLife6.jpg" width="100%" height="100%">
+
+                        </div>
+                        <div class="col-lg-7">
+                            <p><b>Sharks-</b> Australian coastline is famous for the sharks but do not worry, most of them are harmless to humans. But still, seeing one brings fear.</p>
+
+                            <b style="font-size: 20px;">
+                                Some quick tips to avoid or minimize the chances of encountering a shark at beach-
+                            </b>
+                            <ul>
+                                <li>
+                                    Always look for the warning signs before entering into the waters.
+                                </li>
+                                <li>
+                                    Try to avoid swimming at dawn and dusk.
+                                </li>
+                                <li>
+                                    Try to avoid swimming at river mouths and discoloured waters.
+                                </li>
+                                <li>
+                                    Try to avoid swimming in or around the waters which is pool for baitfish.
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
             </div>
 
 
-
         </div>
-      
-       
-    </div>
 
-     
-</section> 
+
+            </section> 
 
 
 
