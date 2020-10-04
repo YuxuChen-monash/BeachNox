@@ -67,7 +67,7 @@
 
 
     .numbertext {
-        color: #f2f2f2;
+        color: 2f2f2;
         font-size: 12px;
         padding: 10px 20px;
         position: absolute;
@@ -77,14 +77,12 @@
     .textonimage {
         position: absolute;
         z-index: 999;
-        margin: 0 auto;
-        top: 80%; /* Adjust this value to move the positioned div up and down */
+        top: 85%; /* Adjust this value to move the positioned div up and down */
         color: white;
-        width: 60%; /* Set the width of the positioned div */
+        width: 90%; /* Set the width of the positioned div */
         line-height: 1.5;
-        color: rgb(255 255 255);
         font-weight: 400;
-        font-size: 50px;
+        font-size: 25px;
         justify-content: center;
     }
 
@@ -107,6 +105,34 @@
         height: 500px !important;
     }
 
+    .customtooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+        border: outset;
+    }
+
+    .customtooltip1 {
+        position: relative;
+        display: inline-block;
+    }
+
+    .customtooltip .tooltiptext {
+        visibility: hidden;
+        width: max-content;
+        background-color: #fff;
+        color: black;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+    }
+
+    .customtooltip:hover .tooltiptext {
+        visibility: visible;
+    }
 
     #myBtn {
         display: none;
@@ -127,777 +153,405 @@
         #myBtn:hover {
             background-color: #555;
         }
+
+    .sectionMargin {
+        padding: 1em 0 !important;
+    }
+
+    .section1Font {
+        /* font-family: "Nunito Sans", Arial, sans-serif; */
+        font-size: large;
+        line-height: 1.8;
+        font-weight: 400;
+        color: rgb(10 9 9);
+        font-family: sans-serif;
+        /* height: 100px; */
+    }
+
+    .section2Font {
+        font-family: "Nunito Sans", Arial, sans-serif;
+        line-height: 1.8;
+        font-weight: 400;
+        color: rgb(10 9 9);
+        /* height: 100px; */
+    }
+
+    .customToolFont {
+        font-family: "Nunito Sans", Arial, sans-serif;
+        font-size: 15px;
+    }
 </style>
 
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-<section class="hero-wrap hero-wrap-2" style="background-image: url('../images/BG/BeachplayBG.jpg');" data-stellar-background-ratio="0.5">
+<section class="hero-wrap hero-wrap-2 responsive" style="        background-image: url('../images/beach_play_bg_3.jpg'); " data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-end">
             <div class="col-md-9 ftco-animate pb-5">
-                <p class="breadcrumbs">
-                    <span class="mr-2"><a href="../Index">Home <i class="fa fa-chevron-right"></i></a></span>
-                    <span>Beach Play <i class="fa fa-chevron-right"></i></span>
-                </p>
-                <h1 class="mb-4 bread">A day at the Beach !</h1>
+                <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>Beach safety <i class="fa fa-chevron-right"></i></span></p>
+
+
             </div>
         </div>
     </div>
 </section>
-
-
-<section class="ftco-section">
+</br>
+<section class="ftco-section sectionMargin section1Font">
     <div class="container">
-        <div class=" wrap-about py-md-5 ftco-animate">
-            <div class="heading-section pr-md-5" style="color: #232020 !important;font-size: xxx-large;font-style: normal;font-family: fantasy;">
+        <div class=" wrap-about ftco-animate">
+
+            <p style="font-size: 25px;color:#000;">
+                Hello Hunters, are you looking for the beach sports and activities?
+                Well, some of them are same as the ground sports but they come with safer
+                and funnier way than the original ones while other lets you seek adventures that open your mind.
+            </p>
+            <div class="heading-section pr-md-5" style="        color: #232020 !important;
+        font-size: xxx-large;
+        font-style: normal;
+       font-family: sans-serif;">
+
                 Adventure Sport
+
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-12 ftco-animate">
                 <div class="row">
-                    <div class="col-md-4" style="text-align: center; cursor:pointer;border-radius: 20px;" onclick="openAdventTab('c1');">
-                        <img class="myLinkClass " src="~/images/surfing.png" width="99%" height="99%" alt="Surfing">
+                    <div class="col-md-4" style="text-align: center; cursor:pointer;" onclick="openAdventTab('c1');">
+                        <img class="myLinkClass " src="~/images/swimming.jpg" width="99%" height="99%" alt="Swimming">
+                        <div class=textonimage> Swimming</div>
+
+                    </div>
+                    <div class="col-md-4" style=" text-align: center ;cursor: pointer;" onclick="openAdventTab('c2');">
+                        <img class="myLinkClass " src="~/images/stand-up-paddling-729824.jpg" width="99%" height="99%" alt="Paddle Boarding">
                         <div class=textonimage>
-                            Surfing
+                            Paddle-Boarding
                         </div>
                     </div>
-                    <div class="col-md-4" style=" text-align: center ;cursor: pointer;border-radius: 20px;" onclick="openAdventTab('c2');">
-                        <img class="myLinkClass " src="~/images/seakayaking.png" width="99%" height="99%" alt="Sea Kayaking">
+                    <div class="col-md-4" style="text-align: center; cursor:pointer;" onclick="openAdventTab('c3');">
+                        <img class="myLinkClass " src="~/images/lewis-ephraim-lBC83RqJXaw-unsplash.jpg" width="99%" height="99%" alt="Diving">
                         <div class=textonimage>
-                            Kayaking
-                        </div>
-                    </div>
-                    <div class="col-md-4" style="text-align: center; cursor:pointer;border-radius: 20px;" onclick="openAdventTab('c3');">
-                        <img class="myLinkClass " src="~/images/diving.png" width="99%" height="99%" alt="Diving">
-                        <div class=textonimage>
-                            Diving
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="information" style="margin-top:20px">
-            <div id="c1" class="adventContainerTab" style="border-radius: 20px; display: none; background: rgba(239, 243, 27, 0.24); padding: 20px">
-                <span onclick="this.parentElement.style.display='none'" style="float: right; color: black; font-size: 35px; cursor: pointer;">&times;</span>
-                <h2>Beach Surfing </h2>
-                <p>
-                    With over 1,800 kilometres of coastline, much of which fronts the open ocean,
-                    Victoria is an ideal location for surfing. Although the area along the Great Ocean Road from Torquay to Anglesea
-                    and Lorne is known as the Surf Coast, there are also excellent surf conditions available along most of the Great Ocean Road
-                    beaches including Apollo Bay,Port Campbell and Warrnambool. Good surf can also be found further west at Port Fairy and Portland.
-                </p>
-                <section>
-                    <div class="row justify-content-center mt-5">
-                        <p class="breadcrumbs"><a href="#111">Full-length wetsuits </a></p>
-                        <p class="breadcrumbs"><span class="col-md-2"><a href="#211"> Safe soft ‘G’-Boards </a></span></p>
-                        <p class="breadcrumbs"><span class="col-md-2"><a href="#311">Rash Guard </a></span></p>
-                        <p class="breadcrumbs"><span class="col-md-2"><a href="#411">Surf Wax </a></span></p>
-                        <p class="breadcrumbs"><span class="col-md-2"><a href="#511">Fins </a></span></p>
-                        <p class="breadcrumbs"><span class="col-md-2"><a href="#611">Leash </a></span></p>
-                        <p class="breadcrumbs"><span class="col-md-2"><a href="#711">Surf Earplugs </a></span></p>
-                        <p class="breadcrumbs"><span class="col-md-2"><a href="#811">Boardshorts </a></span></p>
-                        <p class="breadcrumbs"><span class="col-md-2"><a href="#911">Surf Watches</a></span></p>
-                        <p class="breadcrumbs"><span class="col-md-2"><a href="#1011"> Surf Camera</a></span></p>
-                    </div>
-                </section>
-
-
-
-
-
-
-
-
-                <section class="ftco-section ftco-portfolio">
-                    <div class="container">
-                        <div class="row no-gutters">
-                           
-                            <div class="col-md-10 " id="111" style="height:100%; margin-bottom:90px">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col-md-5 img imageInAdventureSection" style="        background-image: url(../images/Surfing/Full-lengthwetsuits.jpg);">
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="text pt-5 pl-0 pl-lg-5 pl-md-4 ftco-animate">
-                                            <div class="px-4 px-lg-4">
-                                                <div class="desc">
-                                                    <div class="top">
-                                                        <h2 class="text-md-center"><a>Full-length wetsuits</a></h2>
-                                                    </div>
-                                                    <div class="absolute">
-                                                        <p>
-                                                            Wearing a wetsuit is a key safety precaution for surfing,
-                                                            bodyboarding, or just swimming in the ocean. They are especially
-                                                            important for children, as kid’s wetsuits provide insulation to keep
-                                                            the wearer warm and comfortable in the water. Wetsuits are available in
-                                                            a range of thicknesses for boys and girls, so you can select the right suit
-                                                            for the expected water conditions. Wetsuits keep the surfers warm in the cold sea water. You can choose Full Suit or Spring Suit based on the temperature of the water. The thickness of the wetsuit also varies from 2mm to 4/3mm.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-10 " id="211" style="height:100%; margin-bottom:90px">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col-md-5 img imageInAdventureSection" style="        background-image: url(../images/safesoftboards.png);">
-                                    </div>
-
-                                    <div class="col-md-7">
-                                        <div class="text pt-5 pr-md-5 ftco-animate">
-                                            <div class="px-4 px-lg-4">
-                                                <div class="desc">
-                                                    <div class="text-md-right">
-                                                        s
-                                                        <h2 class="text-md-center"><a href="work.html">Safe soft ‘G’-Boards</a></h2>
-                                                    </div>
-                                                    <div class="absolute">
-                                                        <p>
-                                                            Surfing board can be titled as ‘magic carpet’ that lets the
-                                                            surfers ride through the high waves. Your surfboard is the main
-                                                            equipment for surfing. Genuine soft surf boards that offer maximum
-                                                            security, safety and durability. Young children who are being introduced
-                                                            to surfing for the first time or are starting to develop their surfing and
-                                                            generally in the age range of 5 years old to early teenage years. Quality
-                                                            construction, safe and float are well.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-12 " id="311" style="height:100%; margin-bottom:90px">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col-md-5 img imageInAdventureSection" style="        background-image: url(../images/rg_guard.png);">
-                                    </div>
-
-                                    <div class="col-md-7">
-                                        <div class="text pt-5 pl-md-5 pl-md-4 ftco-animate">
-                                            <div class="px-4 px-lg-4">
-                                                <div class="desc">
-                                                    <div class="top">
-
-                                                        <h2 class="text-md-center"><a href="work.html">Rash Guard </a></h2>
-                                                    </div>
-                                                    <div class="absolute">
-                                                        <p>
-                                                            If wetsuit causes irritation to the surfer, then you
-                                                            can make use of rash guard. This guard can be worn between
-                                                            the wetsuit and the body. Rash guard gives you protection from the
-                                                            scorching sun and allied irritation.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-12 " id="411" style="height:100%; margin-bottom:90px">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col-md-5 img imageInAdventureSection" style="        background-image: url(../images/surfwax.jpg);">
-                                    </div>
-
-                                    <div class="col-md-7">
-                                        <div class="text pt-5 pr-md-5 ftco-animate">
-                                            <div class="px-4 px-lg-4">
-                                                <div class="desc">
-                                                    <div class="text-md-center">
-                                                        <h2 class="text-md-center"><a href="work.html">Surf Wax</a></h2>
-                                                    </div>
-                                                    <div class="absolute">
-                                                        <p>
-                                                            Surfers massage a special kind of wax over the surfboard before surfing.
-                                                            The wax keeps the surfers’ grip intact on the surfboard.
-
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-12 " id="511" style="height:100%; margin-bottom:90px">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col-md-5 img imageInAdventureSection" style="        background-image: url(../images/fins1.png);">
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="text pt-5 pl-md-5 pl-md-4 ftco-animate">
-                                            <div class="px-4 px-lg-4">
-                                                <div class="desc">
-                                                    <div class="top">
-                                                        <h2 class="text-md-center"><a href="work.html">Fins</a></h2>
-                                                    </div>
-                                                    <div class="absolute">
-                                                        <p>
-                                                            You cannot sail through the waves without the fins.
-                                                            Fins provide surfers with stability and drive that help in enhancing the surfer’s performance level.
-                                                            The popular types of fins are single-fin, double-fin, quad, five-fin and thruster setups.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-12 " id="611" style="height:100%; margin-bottom:90px">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col-md-5 order-md-last img imageInAdventureSection" style="background-image: url(../images/leash.jpg);">
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="text pt-5 pr-md-5 ftco-animate">
-                                            <div class="px-4 px-lg-4">
-                                                <div class="desc">
-                                                    <div class="text-md-left">
-                                                        <h2 class="text-md-center"><a href="work.html">Leash</a></h2>
-                                                    </div>
-                                                    <div class="absolute">
-                                                        <p>
-                                                            Leash is a surfing equipment that looks like rope.
-                                                            It keeps the surfer attached to the board.
-                                                            In case a high wave washes you away, you will find the board attached to yourself.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-12 " id="711" style="height:100%; margin-bottom:90px">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col-md-5 img imageInAdventureSection" style="        background-image: url(../images/surf_earplugs.png);">
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="text pt-5 pl-0 pl-lg-5 pl-md-4 ftco-animate">
-                                            <div class="px-4 px-lg-4">
-                                                <div class="desc">
-                                                    <div class="top">
-                                                        <h2 class="text-md-center"><a>Surf Ear Plugs</a></h2>
-                                                    </div>
-                                                    <div class="absolute">
-                                                        <p>
-                                                            Generally, surfers use earplugs while surfing in cold water.
-                                                            Surf earplugs are used by the surfers to protect their ear canal
-                                                            as they can suffer from ‘Surfer’s Ear’ due to the long exposure to cold water and cold winds.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-12 " id="811" style="height:100%; margin-bottom:90px">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col-md-5 order-md-last img imageInAdventureSection" style="background-image: url(../images/boardshorts.jpg);">
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="text pt-5 pr-md-5 ftco-animate">
-                                            <div class="px-4 px-lg-4">
-                                                <div class="desc ">
-                                                    <div class="text-md-center">
-                                                        <h2 class="mb-4"><a href="work.html">Board Shorts</a></h2>
-                                                    </div>
-                                                    <div class="absolute">
-                                                        <p>
-                                                            Boardshorts are not mandatory equipment for surfers.
-                                                            However, if you wish to look like a professional surfer then you can
-                                                            use boardshorts. They are without any stiches and made out of stretch fabric
-                                                            that require little time for drying.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-12 " id="911" style="height:100%; margin-bottom:90px">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col-md-5 img imageInAdventureSection" style="        background-image: url(../images/surfwatch.png);">
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="text pt-5 pl-0 pl-lg-5 pl-md-4 ftco-animate">
-                                            <div class="px-4 px-lg-4">
-                                                <div class="desc">
-                                                    <div class="top">
-                                                        <h2 class="text-md-center"><a>Surf Watch </a></h2>
-                                                    </div>
-                                                    <div class="absolute">
-                                                        <p>
-                                                            Surf watches correctly forecast the data related to wave period,
-                                                            wave height, wind direction and speed as well as the tide times.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-12" id="1011" style="height:100%; margin-bottom:90px">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col-md-5 order-md-last img  imageInAdventureSection" style="background-image: url(../images/surf_cam.png);"></div>
-                                    <div class="col-md-7">
-                                        <div class="text pt-5 pr-md-5 ftco-animate">
-                                            <div class="px-4 px-lg-4">
-                                                <div class="desc">
-                                                    <h2 class="text-md-center">
-                                                    <a href="work.html">Surf Camera</a></h2>
-                                                    <div class="absolute">
-                                                        <p>
-                                                            Electronic item that surfers carry with them in the sea are waterproof.
-                                                            Surf cameras are not only used to capture the beautiful and raging sea,
-                                                            but also helps to record the moments of the surfers’ mistakes. Surfers can improve their next
-                                                            performances by watching these pictures.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-            <div id="c2" class="adventContainerTab" style=" display: none;background: rgba(239, 243, 27, 0.24); padding: 20px">
-                <span onclick="this.parentElement.style.display='none'" style="float: right; color: black; font-size: 35px; cursor: pointer;">&times;</span>
-                <h2>
-                    Seal Kayak Tours Apollo Bay, Great Ocean Road
-                </h2>
-                <p>
-                    Paddle out to the Seal Colony viewing the coasts beautiful hills and reefs from the ocean.
-                    1/2 hours of instruction and touring, paddling with qualified guides, in easy to use sit-on-top-kayaks.
-                    Instruction in Surf Safety and Ocean Awareness at Marengo Marine Sanctuary. All equipment is provided including wetsuits,
-                    helmets and PFDs (life jackets).
-
-                </p>
-                <section>
-                    <div class="row justify-content-center mt-5">
-                        <p class="breadcrumbs"><span class="col-md-2"><a href="#121">Paddle leash</a></span></p>
-                        <p class="breadcrumbs"><span class="col-md-2"><a href="#331">Lifebuoy Ring </a></span></p>
-                        <p class="breadcrumbs"><span class="col-md-2"><a href="#221">Lifesaving Jackets </a></span></p>
-                        <p class="breadcrumbs"><span class="col-md-2"><a href="#551">Paddle float </a></span></p>
-                        <p class="breadcrumbs"><span class="col-md-2"><a href="#661">Personal locator beacon </a></span></p>
-                        <p class="breadcrumbs"><span class="col-md-2"><a href="#771">Suitable clothing </a></span></p>
-                        <p class="breadcrumbs"><span class="col-md-2"><a href="#881">Kayak shoes </a></span></p>
-                    </div>
-                </section>
-                <section class="ftco-section ftco-portfolio">
-                    <div class="container">
-                        <div class="row no-gutters">
-                            <div class="col-md-12 " id="121" style="height:100%; margin-bottom:90px">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col-md-5 img  imageInAdventureSection" style="        background-image: url(../images/pl_leash.png);">
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="text pt-5 pl-0 pl-lg-5 pl-md-4 ftco-animate">
-                                            <div class="px-4 px-lg-4">
-                                                <div class="desc">
-                                                    <div class="top">
-                                                        <h2 class="text-md-center"><a>Paddle Leash</a></h2>
-                                                    </div>
-                                                    <div class="absolute">
-                                                        <p>
-                                                            The main purpose of a paddle leash is to keep the paddle in contact
-                                                            with the kayak while fishing or diving. It is important to keep your
-                                                            kayak paddle securely attached to your kayak, a paddle strap will keep your
-                                                            paddle near and act as a sea anchor, while you are able to adjust your
-                                                            technique and return safely. But be aware that paddle leash can get stuck
-                                                            on you so that it possibly hurt you.
-
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-12"style="height:100%; margin-bottom:90px" id="331">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col-md-5 img  imageInAdventureSection" style=" background-image: url(../images/LifebuoyRg.png);">
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="text pt-5 pl-md-5 pl-md-4 ftco-animate">
-                                            <div class="px-4 px-lg-4">
-                                                <div class="desc">
-                                                    <div class="top">
-                                                        <h2 class="text-md-center"><a href="work.html">LifeBuoy Ring </a></h2>
-                                                    </div>
-                                                    <div class="absolute">
-                                                        <p>
-                                                            It is a lifesaver, which is created to be thrown to a person who is in
-                                                            danger in the water. It provides buoyancy and prevents the person from
-                                                            drowning. This lifebuoy ring can be found at the beaches, swimming pools
-                                                            and the water vehicles as an emergency equipment. 
-
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-12 " id="221"style="height:100%; margin-bottom:90px">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col-md-5 order-md-last img  imageInAdventureSection" style="        background-image: url(../images/LJ_jackets.png);">
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="text pt-5 pr-md-5 ftco-animate">
-                                            <div class="px-4 px-lg-4">
-                                                <div class="desc">
-                                                    <div class="text-md-left">
-                                                        <h2 class="text-md-center"><a href="work.html">Lifesaving Jackets</a></h2>
-                                                    </div>
-                                                    <div class="absolute">
-                                                        <p>
-                                                            Life jackets are one of the most important safety gears.
-                                                            They are designed to keep you afloat. They will automatically turn you
-                                                            into a face-up position, keeping your mouth and nostrils out of the water
-                                                            to prevent the risk of drowning and save your life in an emergency.
-                                                            Be sure to wear a life jacket before embarking on your sea kayak journey.
-
-
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-12 " id="551" style="height:100%; margin-bottom:90px">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col-md-5 order-md-last img  imageInAdventureSection" style="        background-image: url(../images/Paddle_hat.png);">
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="text pt-5 pr-md-5 ftco-animate">
-                                            <div class="px-4 px-lg-4">
-                                                <div class="desc">
-                                                    <div class="text-md-left">
-                                                        <h2 class="text-md-center"><a href="work.html">Paddle Float</a></h2>
-                                                    </div>
-                                                    <div class="absolute">
-                                                        <p>
-                                                            This lightweight, breathable hat, specially designed for oarsmen,
-                                                            has mesh side panels and a full brim for sun protection and UV radiation.
-                                                            Children can adjust the back buckle to make it more comfortable, usually
-                                                            with an embroidered logo.
-
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-12 " id="661" style="height:100%; margin-bottom:90px">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col-md-5 img  imageInAdventureSection" style="        background-image: url(../images/Phelmet.png);">
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="text pt-5 pl-0 pl-lg-5 pl-md-4 ftco-animate">
-                                            <div class="px-4 px-lg-4">
-                                                <div class="desc">
-                                                    <div class="top">
-                                                        <h2 class="text-md-center"><a>Paddle Helmet</a></h2>
-                                                    </div>
-                                                    <div class="absolute">
-                                                        <p>
-                                                            When paddling on the beach, be sure to wear a professional kayak helmet
-                                                            in case you tip over or hit your head while paddling and provide appropriate
-                                                            safety protection. It is best to choose a certified helmet. Your helmet should provide adequate protection for your forehead, temples and the back of your head. It should fit, but not too tight to be comfortable. Your helmet should be secured with straps so that it doesn't slide backwards when you move it.
-
-
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-12 " id="771" style="height:100%; margin-bottom:90px">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col-md-5 order-md-last img  imageInAdventureSection" style="        background-image: url(../images/suitableclothing.png);">
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="text pt-5 pr-md-5 ftco-animate">
-                                            <div class="px-4 px-lg-4">
-                                                <div class="desc ">
-                                                    <div class="text-md-left">
-                                                        <h2 class="text-md-center"><a href="work.html">Suitable Clothing</a></h2>
-                                                    </div>
-                                                    <div class="absolute">
-                                                        <p>
-                                                            No one likes the feeling of being cold and wet, or hypothermia.
-                                                            The first thing to consider when planning your kayaking adventure
-                                                            is your surroundings. Preparation is important both to enjoy the kayaking
-                                                            experience and to wear the right clothes. Figure out what the weather is like
-                                                            where you're paddling, and combine warm weather clothing
-                                                            (such as sweat fabrics) with cold weather gear (such as dry clothes) to
-                                                            get the best fit for your chosen activity to keep you safe and comfortable.
-
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-12 " id="881" style="height:100%; margin-bottom:90px">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col-md-5 img  imageInAdventureSection" style="        background-image: url(../images/Kayayak_shoes.png);">
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="text pt-5 pl-0 pl-lg-5 pl-md-4 ftco-animate">
-                                            <div class="px-4 px-lg-4">
-                                                <div class="desc">
-                                                    <div class="top">
-                                                        <h2 class="text-md-center"><a>Kayak Shoes</a></h2>
-                                                    </div>
-                                                    <div class="absolute">
-                                                        <p>
-                                                            The kayak shoes are not just for getting wet, but also to expel water quickly,
-                                                            dry quickly, and hold their form when saturated. Importantly, the design of kayak
-                                                            shoes is for comfort. There are models designed to keep out the cold, provide grip
-                                                            in your kayak and a good feel on the pegs or peddles. Perhaps chafing is a thing for you,
-                                                            and it could help you to avoid your foot straps chaffing your wet skin.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
+                            Snorkelling
 
                         </div>
                     </div>
-                </section>
-            </div>
-
-            <div id="c3" class="adventContainerTab" style="        display: none;
-        background: rgba(239, 243, 27, 0.24);
+                    <div id="information">
+                        <div id="c1" class="adventContainerTab" style="        display: none;
+        background:#d0dbe6;
         padding: 20px">
-                <span onclick="this.parentElement.style.display='none'" style="float: right; color: black; font-size: 35px; cursor: pointer;">&times;</span>
-                <h2>Diving</h2>
-                <p>
-                    Children who are interested in diving usually need to participate in training.
-                    You can't dive without professional training.
-                    High diving risks making mistakes if you don't know how to use your diving equipment.
-                    However, if you pay attention to your equipment, diving is less likely to be risky,
-                    and the physical fitness and coordination required can be improved by taking relevant courses.
-                    Diving is a good place to start.
-                    Children usually become interested in diving between the ages of five and eight.
-                    Eight-year-olds can try a bubble machine and learn the basics of theory and safety knowledge
-                    through a diving course, then learn how to use the diving equipment in a swimming pool.
-                    Once they feel comfortable, they can enjoy a two-meter-deep ocean dive.
-                    For those who are not ready to take a full scuba course, t
-                    here is an option to explore scuba diving, usually for those over 10 years of age.
-                    The maximum depth is 12 m (under 11 years old) and children aged 12 to 14 can reach 18 m.
+                            <span onclick="this.parentElement.style.display='none'" style="float: right; color: black; font-size: 35px; cursor: pointer;">&times;</span>
+                            <h1><b>Swimming</b></h1>
+                            <p>
+                                Melburnians love their free time at the beach.
+                                Water sports such as beach swimming, paddle boarding, and snorkelling provide them with a cherished chance to
+                                enjoy the blue sky and ocean. In fact, it is essential for children to know and learn beach swimming.
+                                Beach swimming is almost one of the indispensable outdoor aquatic sports in the life of children in Melbourne.
+                                Beach swimming turns the ocean into a natural playground for children to enjoy nature.
+                                It enables children to learn to respect the ocean, appreciate its power and majesty, explore their own limits,
+                                develop their survival skills in open water and swim in the waves,
+                                and cultivate their confidence in their own abilities.
 
-                </p>
+                            </p>
 
-                <section>
-                    <div class="row justify-content-center mt-5">
-                        <p class="breadcrumbs"><span class="col-md-2"><a href="#12">mask</a></span></p>
-                        <p class="breadcrumbs"><span class="col-md-2"><a href="#22"> wetsuit</a></span></p>
-                        <p class="breadcrumbs"><span class="col-md-2"><a href="#33">Fins </a></span></p>
-                        <p class="breadcrumbs"><span class="col-md-2"><a href="#44"> Buoyancy Compensator</a></span></p>
-                        <p class="breadcrumbs"><span class="col-md-2"><a href="#55">Regulator</a></span></p>
+                            <b>Gears Required:</b>
+                            <div class="customtooltip">
 
-                    </div>
-                </section>
-                <section class="ftco-section ftco-portfolio">
-                    <div class="container">
-                        <div class="row no-gutters">
-                            <div class="col-md-12 " id="12" style="height:100%; margin-bottom:90px">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col-md-5 img  imageInAdventureSection" style="background-image: url(../images/mask1_1.png);">
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="text pt-5 pl-0 pl-lg-5 pl-md-4 ftco-animate">
-                                            <div class="px-4 px-lg-4">
-                                                <div class="desc">
-                                                    <div class="top">
-                                                        <h2 class="text-md-center"><a>Mask</a></h2>
-                                                    </div>
-                                                    <div class="absolute">
-                                                        <p>
-                                                            Designed specifically for scuba diving,
-                                                            this water mask is made of high-quality materials such as tempered glass and
-                                                            silicon, which are strong enough to withstand the underwater environment.
-                                                            Wearing a mask helps prevent water from entering the diver's nose,
-                                                            however, the main purpose of a diving mask is to allow the diver to focus his
-                                                            eyes clearly.  This adds to the diver's comfort, allowing him to
-                                                            empty the water leaking into the mask and keep it from getting into
-                                                            his nose. Many new divers do not realize that scuba masks need to fit.
-
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <img src="~/images/beach.png" alt="swimsuit_beachnox" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
+                                <div class="desc" style="font-size: medium;text-align: center;">
+                                    SwimSuits
                                 </div>
+                                <span class="tooltiptext customToolFont ">
+                                    <h3><b>SwimSuit</b></h3>
+                                    A swimsuit is an essential garment for water sports or water sports</br> such as swimming, diving, surfing.
+                                    Men, women and children often wear different styles. </br>There are many styles to choose from, and they vary
+                                    in coverage and material.
+                                </span>
                             </div>
 
-                            <div class="col-md-12 " id="22" style="height:100%; margin-bottom:90px">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col-md-5 order-md-last img  imageInAdventureSection" style="background-image: url(../images/fl-wetsuit.png);">
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="text pt-5 pr-md-5 ftco-animate">
-                                            <div class="px-4 px-lg-4">
-                                                <div class="desc">
-                                                    <div class="text-md-left">
-                                                        <h2 class="text-md-center"><a href="work.html">Wetsuit</a></h2>
-                                                    </div>
-                                                    <div class="absolute">
-                                                        <p>
-                                                            The wetsuit is designed and used for safety,
-                                                            buoyancy, warmth, flexibility, wind resistance and fluid mechanics.
-                                                            It is a garment or device designed to protect the diver from the underwater environment.
-                                                            But generally because kids are small and low in body fat, they tend to get cold faster,
-                                                            so prioritizing warmth and comfort becomes even more important. Fit is the key to staying warm.
-                                                            Too loose wetsuit allows large amounts of water to circulate on a diver's skin,
-                                                            taking away body temperature. Wetsuit that is too tight is very uncomfortable and
-                                                            can damage blood circulation in the neck, a dangerous condition that can cause fainting.
-                                                            For this reason, many divers opt for custom suits rather than buying off-the-rack ones
+                            <div class="customtooltip">
 
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <img src="~/images/rubber-ring.png" alt="floating_suits" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
+                                <div class="desc" style="font-size: medium;text-align: center;">
+                                    Floating Suits
                                 </div>
+                                <span class="tooltiptext customToolFont ">
+                                    <h3><b>Floatation Suit</b></h3>
+                                    The floatation suit provides additional protection and is designed</br> to build confidence and comfort in the water.
+                                    These swimsuits are made of buoyancy foam,</br> which not only helps children stay afloat in the water,
+                                    </br>but also helps children develop important swimming skills at beaches.
+                                </span>
                             </div>
-                            <div class="col-md-12 " id="33"style="height:100%; margin-bottom:90px">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col-md-5 img  imageInAdventureSection" style="        background-image: url(../images/fins1.png
-">
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="text pt-5 pl-md-5 pl-md-4 ftco-animate">
-                                            <div class="px-4 px-lg-4">
-                                                <div class="desc">
-                                                    <div class="top">
-                                                        <h2 class="text-md-center"><a href="work.html">Fins </a></h2>
-                                                    </div>
-                                                    <div class="absolute">
-                                                        <p>
-                                                            The main purpose of scuba fins is to help divers move faster and more
-                                                            efficiently underwater with minimal effort.
-                                                            Divers no longer need to use their hands to move underwater
-                                                            because the fins provide a wider space to push and resist water movement.
+                            <div class="customtooltip">
 
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <img src="~/images/long-sleeve.png" alt="rash_guards" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
+                                <div class="desc" style="font-size: medium;text-align: center;">
+                                    Rash Guards
                                 </div>
+                                <span class="tooltiptext customToolFont ">
+                                    <h3><b>Rash Guard</b></h3>
+                                    Rash Guards are designed to be worn over swimsuits to</br> provide additional sun protection and
+                                    is a necessity for children with sensitive skin.</br> Long-sleeved rash Guard provides greater protection
+                                    and coverage, while </br>short-sleeved options may be comfortable to wear during summer.
+
+                                </span>
+                            </div>
+                            <div class="customtooltip">
+
+                                <img src="~/images/goggles_bx.png" alt="goggles" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
+                                <div class="desc" style="font-size: medium;text-align: center;">
+                                    Goggles
+                                </div>
+                                <span class="tooltiptext customToolFont ">
+                                    <h3><b>Goggles</b></h3>
+                                    Goggles are a necessary for swimmers and can</br> protect a child's eyes from itching.
+                                    </br>Besides, they provide better visibility and prevent water from entering eyes.
+
+                                </span>
+                            </div>
+                            <div class="customtooltip">
+
+                                <img src="~/images/swimming 8.png" alt="swimming_caps" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
+                                <div class="desc" style="font-size: medium;text-align: center;">
+                                    Swimming Caps
+                                </div>
+                                <span class="tooltiptext customToolFont ">
+                                    <h3><b>Swimming Caps</b></h3>
+                                    Swimming caps keep hair away from the face,</br> reducing drag and increasing hydrodynamics.
+                                    </br> In open water, the cap makes it easier for other athletes </br>and rescuers to see the swimmer.
+                                </span>
                             </div>
 
-                            <div class="col-md-12 " id="44" style="height:100%; margin-bottom:30px">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col-md-5 img  imageInAdventureSection" style="        background-image: url(../images/B_Compensator.png);">
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="text pt-5 pl-md-5 pl-md-4 ftco-animate">
-                                            <div class="px-4 px-lg-4">
-                                                <div class="desc">
-                                                    <div class="top">
-                                                        <h2 class="text-md-center"><a href="work.html">Buoyancy Compensator</a></h2>
-                                                    </div>
-                                                    <div class="absolute">
-                                                        <p>
-                                                            Buoyancy compensation devices,
-                                                            commonly referred to simply as BC or BCD,
-                                                            are special multi-purpose "vests" used by divers to
-                                                            achieve neutral buoyancy at depth and positive buoyancy at surface.
-                                                            It has an inflatable bladder that can be filled with different amounts
-                                                            of gas, keeping the diver stable at different water levels, and allowing
-                                                            you to adjust your buoyancy while diving.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <div class="customtooltip">
+
+                                <img src="~/images/ear-plug.png" alt="earplugs" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
+                                <div class="desc" style="font-size: medium;text-align: center;">
+                                    Ear Plugs
                                 </div>
+                                <span class="tooltiptext customToolFont ">
+                                    <h3><b>EarPlugs</b></h3>
+                                    Earplugs are designed according to the shape of the ear canal and </br>create a tight seal to prevent water from entering the canal.
+                                    </br> This allows children to swim comfortably without choking on the water.
+                                </span>
+                            </div>
+                            <div class="customtooltip">
+
+                                <img src="~/images/towel 5.png" alt="Towel" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
+                                <div class="desc" style="font-size: medium;text-align: center;">
+                                    Towel
+                                </div>
+                                <span class="tooltiptext customToolFont ">
+                                    <h3><b>Towels</b></h3>
+                                    Keep a fluffy towel handy to help your child
+                                    </br>stay dry quickly after swimming.
+                                </span>
                             </div>
 
-                            <div class="col-md-12 " id="551" style="height:100%; margin-bottom:30px">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col-md-5 order-md-last img  imageInAdventureSection" style="        background-image: url(../images/Regulator.png);">
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="text pt-5 pr-md-5 ftco-animate">
-                                            <div class="px-4 px-lg-4">
-                                                <div class="desc">
-                                                    <div class="text-md-left">
-                                                        <h2 class="text-md-center"><a href="work.html">Regulator</a></h2>
-                                                    </div>
-                                                    <div class="absolute">
-                                                        <p>
-                                                            Apparently, the scuba diving regulator allows the diver to breathe from a tank
-                                                            under the water. The purpose of a scuba diving regulator is to reduce the
-                                                            high-pressure air in the tank to breathable pressure as needed.
-                                                            You can't breathe directly out of the tank because high pressure can
-                                                            damage your lungs. Therefore, the cylinder is fitted with a regulator.
-                                                            This regulator does two things: it lowers the tank pressure to a safe level
-                                                            for you to inhale; It can also provide air on demand.
+                            </br>
+                            <p>
+                                <b>Skills Achieved:</b>Basic swimming survival skills, including float, move through the water
+                                and control breathing under the water, Water and Beach Safety Knowledge.
+                            </p>
 
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                        </div>
+
+                        <div id="c2" class="adventContainerTab" style="        display: none;
+        background:#d0dbe6;
+        padding: 20px">
+                            <span onclick="this.parentElement.style.display='none'" style="float: right; color: black; font-size: 35px; cursor: pointer;">&times;</span>
+                            <h1>
+                                <b>
+                                    Paddle Boarding
+                                </b>
+
+                            </h1>
+                            <p>
+                                Stand-up Paddle boarding(SUP) is an aquatic sport that everyone can enjoy, no matter your age, ability or size.
+                                It is easy to learn, relax, adventurous, fun, and safe as well as has quickly become one of the fastest growing
+                                leisure sports in Australia. Not only does it give your whole body the perfect workout to improve balance,
+                                coordination, strength and endurance, but it also relieves stress, elevates spirits, and invites you to participate
+                                in a kind of aquatic adventure and exploration. Stand-up Paddle boarding(SUP) is a great way for children to get out
+                                and experience nature, and they're gentler than surfing. All you need is a little balance!
+
+
+                            </p>
+                            </br><b>Gears Required:</b>
+                            <div class="customtooltip">
+
+                                <img src="~/images/leash (1).png" alt="paddle Leash" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
+                                <div class="desc" style="font-size: medium;text-align: center;">
+                                    Paddle Leash
                                 </div>
+                                <span class="tooltiptext customToolFont ">
+                                    <h3><b>Paddle Leash</b></h3>
+                                    The main purpose of the paddle leash is to keep the paddle</br> in contact with the board.
+                                    Make sure your paddle is securely attached to your board.
+
+                                </span>
                             </div>
+
+                            <div class="customtooltip">
+
+                                <img src="~/images/paddle-board 1.png" alt="SUP_Paddle" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
+                                <div class="desc" style="font-size: medium;text-align: center;">
+                                    Paddle Board
+                                </div>
+                                <span class="tooltiptext customToolFont ">
+                                    <h3><b>Paddle Board</b></h3>
+                                    Choosing the right paddle and board is essential for a child to </br> participate in vertical paddle surfing,
+                                    </br> which helps him to keep his balance and stay out of the water.
+                                </span>
+                            </div>
+
+                            <div class="customtooltip">
+
+                                <img src="~/images/life-jacket.png" alt="LifeJackets" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
+                                <div class="desc" style="font-size: medium;text-align: center;">
+                                    Life Jackets
+                                </div>
+                                <span class="tooltiptext customToolFont ">
+                                    <h3><b>Life Jackets</b></h3>
+                                    Life jacket is one of the most important safety equipment.</br>
+                                    They are designed to ensure that children can float, automatically </br>turn you into a
+                                    face-up position,keep your mouth </br>and nostrils out of the water to prevent the risk
+                                    </br>of drowning, and save your life in an emergency.
+                                </span>
+                            </div>
+
+                            <div class="customtooltip">
+
+                                <img src="~/images/cap.png" alt="cap" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
+                                <div class="desc" style="font-size: medium;text-align: center;">
+                                    Paddle Hat
+                                </div>
+                                <span class="tooltiptext customToolFont ">
+                                    <h3><b>Paddle Hat</b></h3>
+                                    This lightweight, breathable hat, specially </br>designed for oarsmen,
+                                    has mesh side panels and a full brim for </br>sun protection and UV radiation.
+                                    Children can adjust the back buckle to make it more comfortable.
+                                </span>
+                            </div>
+
+                            <div class="customtooltip">
+
+                                <img src="~/images/sunscreen 1.png" alt="SunScreen" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
+                                <div class="desc" style="font-size: medium;text-align: center;">
+                                    SunScreen
+                                </div>
+                                <span class="tooltiptext customToolFont ">
+                                    <h3><b>Sunscreen</b></h3>
+                                    The hot sun shines on the beach during the day.</br>
+                                    Prolonged exposure to high temperatures</br> or ultraviolet light can be harmful.
+                                    </br>To protect your skin from burns, apply sunscreen to your skin before starting
+                                    </br>a stand-up paddle boarding trip.
+                                </span>
+                            </div>
+                            <p>
+                                <b>Skills Achieved:</b>
+                                Basic Balance Skills, Basic Paddle/Stroke Techniques, Beach and Water Safety Knowledge
+
+                            </p>
+
+                        </div>
+
+                        <div id="c3" class="adventContainerTab" style="        display: none;
+        background:#d0dbe6;
+        padding: 20px">
+                            <span onclick="this.parentElement.style.display='none'" style="float: right; color: black; font-size: 35px; cursor: pointer;">&times;</span>
+                            <h2><b><b>Snorkelling</b></b></h2>
+                            <p>
+                                If you want to experience the wonders hidden in Melbourne underwater, you should not skip snorkelling.
+                                It is a kind of swimming on or through a body of water. While snorkelling, it becomes mandatory to put
+                                the snorkel (breathing tube) and a diving mask. This activity provides you an amazing opportunity to observe
+                                underwater life. Since it does not require any extra effort, the activity is appealing to all ages.
+                                Famous places in Melbourne to engage with snorkelling are, Mornington Peninsula, Blairgowrie Pier, Diamond Bay,
+                                Rye Pier, Williamstown Beach and Shelly Beach. It is advised to always snorkel with a buddy to ensure each other
+                                safety and avoid touching the underwater aquatic life.
+
+                            </p>
+                            </br><b>Gears Required:</b>
+                            <div class="customtooltip">
+
+                                <img src="~/images/mask (1).png" alt="snorkel" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
+                                <div class="desc" style="font-size: medium;text-align: center;">
+                                    Snorkel
+                                </div>
+                                <span class="tooltiptext customToolFont ">
+                                    <h3><b>Snorkel</b></h3>
+                                    An equipment used for breathing air from the surface of the water</br> when the head
+                                    is completely submerged in the water.
+
+                                </span>
+                            </div>
+
+                            <div class="customtooltip">
+
+                                <img src="~/images/goggles_(1).png" alt="diving mask" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
+                                <div class="desc" style="font-size: medium;text-align: center;">
+                                    Diving Mask
+                                </div>
+                                <span class="tooltiptext customToolFont ">
+                                    <h3><b> Diving Mask</b></h3>
+                                    Wearing one, makes it easy for snorkeler to see </br>clearly underwater if going deep underwater.
+                                </span>
+                            </div>
+
+                            <div class="customtooltip">
+
+                                <img src="~/images/flippers.png" alt="Swim Fins" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
+                                <div class="desc" style="font-size: medium;text-align: center;">
+                                    Swim Fins
+                                </div>
+                                <span class="tooltiptext customToolFont ">
+                                    <h3><b>Swim Fins</b></h3>
+                                    An accessory made of rubber or plastic and worn on foot to aid
+                                    </br>the movement through water in activities like snorkelling, scuba diving etc.
+                                </span>
+                            </div>
+
+                            <div class="customtooltip">
+
+                                <img src="~/images/wetsuit.png" alt="wetsuits" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
+                                <div class="desc" style="font-size: medium;text-align: center;">
+                                    Wetsuits
+                                </div>
+                                <span class="tooltiptext customToolFont ">
+                                    <h3><b>WetSuits</b></h3>
+                                    For children specially, wearing the wetsuits is vital as it provides
+                                    </br>insultation to keep the body warm and comfortable in cold ocean water.
+
+                                </span>
+                            </div>
+
+                            <div class="customtooltip">
+
+                                <img src="~/images/hand-gloves.png" alt="Gloves" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
+                                <div class="desc" style="font-size: medium;text-align: center;">
+                                    Gloves
+                                </div>
+                                <span class="tooltiptext customToolFont ">
+                                    <h3><b>Gloves</b></h3>
+                                    They are optional for children to wear but in winters they</br> are very useful when body
+                                    is in contact with extremely low temperatures.
+
+                                </span>
+                            </div>
+                            <p>
+                            <p>
+                                <b>Skills Achieved:</b>Basic swimming survival skills, including float, move through the water
+                                and control breathing under the water, Water and Beach Safety Knowledge.
+                            </p>
+
+
 
                         </div>
                     </div>
-                </section>
+
+                </div>
+
             </div>
+
         </div>
 
     </div>
@@ -905,16 +559,21 @@
 
 </section>
 
-<section class="ftco-section">
+<section class="ftco-section sectionMargin section2Font ">
     <div class="container">
-        <div class=" wrap-about py-md-5 ftco-animate">
+        <div class=" wrap-about ftco-animate">
             <div class="heading-section pr-md-5 " style="color: #232020 !important;
         font-size: xxx-large;
         font-style: normal;
-        font-family: fantasy;">
+       font-family: sans-serif;
+">
 
 
                 Sand+Sun=Fun
+
+
+
+
             </div>
         </div>
 
@@ -924,44 +583,77 @@
 
                 <div class="numbertext"> 1 / 8</div>
                 <div class="column2">
-                    <img src="~/images/scavanger.jpg" style="width:100%; height:inherit">
+                    <img src="~/images/sandsun/treasurehunt.jpg" style="width:100%; height:inherit">
                 </div>
 
                 <div class="column2">
-                    <div id="1" class="containerTab" style="
-        background: rgba(239, 243, 27, 0.24);
+
+                    <div id="1" class="containerTab" style="        background-color: #d0dbe6;
         padding: 20px;
         height: inherit
 ">
-                        <h2>Beach Scavenger Hunt</h2>
+                        <h2><b>Beach Scavenger Hunt</b></h2>
                         <p>Hello explorer, we know you want to hunt the treasures of the beach. Well, go for a treasure hunt. Make sure, you have an adult who needs to host the hunt. He/she need to supply every participant with a list on paper and either a bucket or carrying container in which participant will keep the collected treasures. The list items can vary for different age groups like shells, crabs, wood, feather, etc. Let the host count the points in the end and announce the winner.</p>
                         <p><b>Tools Required:</b> A beach bucket to collect the treasures and list on paper of items (to be provided by an adult) </p>
+                        <div class="customtooltip1">
+
+                            <img src="~/images/sandsun_tools/bucket.png" alt="cap" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
+                            <div class="desc" style="font-size: medium;text-align: center;">
+                                Bucket
+                            </div>
+
+                        </div>
                         <p>
                             <b>Skills Achieved:</b> Observational skills.
 
                         </p>
                     </div>
-                </div>
 
+                </div>
             </div>
 
             <div class="mySlides">
                 <div class="numbertext"> 2 / 8</div>
                 <div class="column2">
-                    <img src="~/images/sandcastle.jpg" style="  width: 100%;
+                    <img src="~/images/sandsun/sandcastle.jpg" style="  width: 100%;
         height: inherit
 ">
                 </div>
                 <div class="column2">
-                    <div id="2" class="containerTab" style="
-        background: rgba(239, 243, 27, 0.24);
+                    <div id="2" class="containerTab" style="        background-color: #d0dbe6;
         padding: 20px;
         height: inherit
 ">
-                        <h2>Sand Forts/Castles</h2>
+                        <h2><b>Sand Forts/Castles</b></h2>
                         <p>Without even digging the sand and then creating the castles or forts, is the beach trip complete. And why to restrict just to forts and castles, let your imagination come out and run wild and feel free to create whatever you desire and think. If building anything closer to water, oh dear make sure to click the photographs of your art before the waves wash them away.</p>
 
-                        <p><b>Tools Required:</b> Shovels, buckets, sticks etc</p>
+                        <p>
+                            <b>Tools Required:</b> Shovels, buckets, sticks etc
+                            <div class="customtooltip1">
+
+                                <img src="~/images/sandsun_tools/bucket.png" alt="cap" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
+                                <div class="desc" style="font-size: medium;text-align: center;">
+                                    Bucket
+                                </div>
+
+                            </div>
+                            <div class="customtooltip1">
+
+                                <img src="~/images/sandsun_tools/shovel.png" alt="cap" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
+                                <div class="desc" style="font-size: medium;text-align: center;">
+                                    Shovel
+                                </div>
+
+                            </div>
+                            <div class="customtooltip1">
+
+                                <img src="~/images/sandsun_tools/stick.png" alt="cap" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
+                                <div class="desc" style="font-size: medium;text-align: center;">
+                                    Stick
+                                </div>
+
+                            </div>
+                        </p>
                         <p><b>Skills Achieved:</b> Creative thinking. </p>
                     </div>
                 </div>
@@ -970,14 +662,37 @@
             <div class="mySlides">
                 <div class="numbertext">3 / 8</div>
                 <div class="column2">
-                    <img src="../images/BG/BeachplayBG.jpg" style="width: 100%;height: inherit">
+                    <img src="~/images/sandsun/Volleyball.jpg" style="        width: 100%;
+        height: inherit
+">
                 </div>
                 <div class="column2">
-                    <div id="3" class="containerTab" style="background: rgba(239, 243, 27, 0.24);padding: 20px;height: inherit">
-                        <h2>Beach Volleyball</h2>
+                    <div id="3" class="containerTab" style="        background-color: #d0dbe6;
+        padding: 20px;
+        height: inherit
+">
+                        <h2><b>Beach Volleyball</b></h2>
                         <p>It’s the perfect game to show your diving skills without getting hurt. For little one, the amazing part is you can even play with the beach ball and a towel (for net). Divide the teams and stand on the either sides of the net and then start you fun. Keep a count on the number of times you can throw the ball back and forth. Make sure you apply ample of sunscreen to avoid the UV rays. </p>
 
-                        <p><b>Tools Required:</b> Ball, net (some times patrolled beaches have nets set up)
+                        <p>
+                            <b>Tools Required:</b> Ball, net (some times patrolled beaches have nets set up)
+                            <div class="customtooltip1">
+
+                                <img src="~/images/sandsun_tools/beach-volleyball _ball.png" alt="cap" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
+                                <div class="desc" style="font-size: medium;text-align: center;">
+                                    Ball
+                                </div>
+
+                            </div>
+                            <div class="customtooltip1">
+
+                                <img src="~/images/sandsun_tools/volleyball net.png" alt="cap" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
+                                <div class="desc" style="font-size: medium;text-align: center;">
+                                    Net
+                                </div>
+
+                            </div>
+                        </p>
                         <p>
                             <b>Skills Achieved:</b> Throwing and Volleying
                         </p>
@@ -987,21 +702,38 @@
             <div class="mySlides">
                 <div class="numbertext">4 / 8</div>
                 <div class="column2">
-                    <img src="~/images/sandsational.jpg" style="        width: 100%;
+                    <img src="~/images/sandsun/sandsational.jpg" style="        width: 100%;
         height: inherit
 ">
                 </div>
                 <div class="column2">
-                    <div id="4" class="containerTab" style="
-        background: rgba(239, 243, 27, 0.24);
+                    <div id="4" class="containerTab" style="        background-color: #d0dbe6;
         padding: 20px;
         height: inherit
 ">
-                        <h2>SandSational</h2>
+                        <h2><b>SandSational</b></h2>
                         <p>
                             There is no better fun activity than digging in the sand to dig the deep holes and see if you or your friend can fit in the hole or see how long does it take to fill the hole with water. Always be careful while digging, some little aquatic animals would not like you to do so. Also, after you have finished the play, remember to fill the holes with the sand for safety purposes.
                         </p>
-                        <p><b>Tools Required:</b> Shovels and Buckets
+                        <p>
+                            <b>Tools Required:</b> Shovels and Buckets
+                            <div class="customtooltip1">
+
+                                <img src="~/images/sandsun_tools/bucket.png" alt="cap" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
+                                <div class="desc" style="font-size: medium;text-align: center;">
+                                    Bucket
+                                </div>
+
+                            </div>
+                            <div class="customtooltip1">
+
+                                <img src="~/images/sandsun_tools/shovel.png" alt="cap" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
+                                <div class="desc" style="font-size: medium;text-align: center;">
+                                    Shovel
+                                </div>
+
+                            </div>
+
                         <p>
                             <b>Skills Achieved:</b> Lowering and lifting objects
                         </p>
@@ -1012,23 +744,31 @@
             <div class="mySlides">
                 <div class="numbertext">5 / 8</div>
                 <div class="column2">
-                    <img src="~/images/bucketrace.jpg" style="        width: 100%;
+                    <img src="~/images/sandsun/bucketrace.jpg" style="        width: 100%;
         height: inherit
 ">
                 </div>
                 <div class="column2">
-                    <div id="5" class="containerTab" style="
-        background: rgba(239, 243, 27, 0.24);
+                    <div id="5" class="containerTab" style="        background-color: #d0dbe6;
         padding: 20px;
         height: inherit
 ">
-                        <h2>Bucket Race</h2>
+                        <h2><b>Bucket Race</b></h2>
                         <p>
                             Hello children, don’t you love relay races. Well a water bucket relay is the race you can not skip.
                             Grab your plastic cups or small containers and run to the water, fill your carrying containers and rush to empty
                             it in the bucket. No matter how hard you try, you can not stop the water from spilling while you laugh and run.
                         </p>
-                        <p><b>Tools Required:</b> A Bucket and Carrying cup/container
+                        <p>
+                            <b>Tools Required:</b> A Bucket and Carrying cup/container
+                            <div class="customtooltip1">
+
+                                <img src="~/images/sandsun_tools/bucket.png" alt="cap" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
+                                <div class="desc" style="font-size: medium;text-align: center;">
+                                    Bucket
+                                </div>
+
+                            </div>
                         <p>
                             <b>Skills Achieved:</b> Balance
                         </p>
@@ -1039,24 +779,34 @@
             <div class="mySlides">
                 <div class="numbertext">6 / 8</div>
                 <div class="column2">
-                    <img src="~/images/beachfrisbee.jpg" style="        width: 100%;
+                    <img src="~/images/sandsun/beach_frisbee.jpg" style="        width: 100%;
         height: inherit
 ">
                 </div>
                 <div class="column2">
-                    <div id="6" class="containerTab" style="
-        background: rgba(239, 243, 27, 0.24);
+                    <div id="6" class="containerTab" style="        background-color: #d0dbe6;
         padding: 20px;
         height: inherit
 ">
-                        <h2>Beach Frisbee</h2>
+                        <h2><b>Beach Frisbee</b></h2>
                         <p>
                             We know how much you love playing frisbee golf, so why not to play at beach with your friends.
                             You can set the targets using the items you are carrying to the beach like an umbrella, bag packs etc.
                             Throw your frisbee as close to
                             the target turn by turn. Remember to give smaller kids an advantage by allowing them to throw from a closer distance.
                         </p>
-                        <p><b>Tools Required:</b> Frisbees
+                        <p>
+                            <b>Tools Required:</b> Frisbees
+                            <div class="customtooltip1">
+
+                                <img src="~/images/sandsun_tools/frisbee.png" alt="cap" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
+                                <div class="desc" style="font-size: medium;text-align: center;">
+                                    Frisbee
+                                </div>
+
+                            </div>
+                        </p>
+                        <p>
                         <p>
                             <b>Skills Achieved:</b> Throwing and Aiming
                         </p>
@@ -1067,22 +817,42 @@
             <div class="mySlides">
                 <div class="numbertext">7 / 8</div>
                 <div class="column2">
-                    <img src="~/images/tugofwar.jpg" style="        width: 100%;
+                    <img src="~/images/sandsun/tugofwar.jpg" style="        width: 100%;
         height: inherit
 ">
                 </div>
                 <div class="column2">
-                    <div id="7" class="containerTab" style="
-        background: rgba(239, 243, 27, 0.24);
+                    <div id="7" class="containerTab" style="        background-color: #d0dbe6;
         padding: 20px;
         height: inherit
 ">
-                        <h2>Tug of War</h2>
-                        <p>It’s the perfect game to show your diving skills without getting hurt. For little one, the amazing part is you can even play with the beach ball and a towel (for net). Divide the teams and stand on the either sides of the net and then start you fun. Keep a count on the number of times you can throw the ball back and forth. Make sure you apply ample of sunscreen to avoid the UV rays. </p>
-
-                        <p><b>Tools Required:</b> Ball, net (some times patrolled beaches have nets set up)
+                        <h2><b>Tug of War</b></h2>
                         <p>
-                            <b>Skills Achieved:</b> Throwing and Volleying
+                            This is where you want to impress your friends by showing your muscle strength. You can use a rope or towels knotted together and teams can stand at the water’s edge. This is fun and safe because even you know you are prepared to end up in the water.
+                        </p>
+                        <p>
+                            <b>Tools Required:</b> Rope or Towels
+
+                            <div class="customtooltip1">
+
+                                <img src="~/images/sandsun_tools/rope.png" alt="cap" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
+                                <div class="desc" style="font-size: medium;text-align: center;">
+                                    Rope
+                                </div>
+
+                            </div>
+                            <div class="customtooltip1">
+
+                                <img src="~/images/sandsun_tools/towel.png" alt="cap" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
+                                <div class="desc" style="font-size: medium;text-align: center;">
+                                    Towel
+                                </div>
+
+                            </div>
+                        </p>
+
+                        <p>
+                            <b>Skills Achieved:</b> Balance
                         </p>
                     </div>
                 </div>
@@ -1091,11 +861,16 @@
             <div class="mySlides">
                 <div class="numbertext">8 / 8</div>
                 <div class="column2">
-                    <img src="~/images/sandhopscotch.jpg" style="width: 100%;height: inherit">
+                    <img src="~/images/sandsun/hopscotch.jpg" style="        width: 100%;
+        height: inherit
+">
                 </div>
                 <div class="column2">
-                    <div id="8" class="containerTab" style="background: rgba(239, 243, 27, 0.24);padding: 20px;height: inherit">
-                        <h2>Beach Hopscotch</h2>
+                    <div id="8" class="containerTab" style="        background-color: #d0dbe6;
+        padding: 20px;
+        height: inherit
+">
+                        <h2><b>Beach Hopscotch</b></h2>
                         <p>
                             Don’t you want to hop at the beach,
                             then bring your regular hopscotch game to the beach.
