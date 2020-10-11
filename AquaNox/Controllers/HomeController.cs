@@ -72,7 +72,16 @@ namespace AquaNox.Controllers
             return View();
 
         }
+
+        public ActionResult test()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+
+        }
     }
+
 
     public class BasicAuthenticationAttribute : ActionFilterAttribute
         {
