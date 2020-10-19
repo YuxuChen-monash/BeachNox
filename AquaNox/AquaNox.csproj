@@ -144,6 +144,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="images\aboutusBG.jpg" />
+    <Content Include="images\aboutusBG.png" />
     <Content Include="images\about_us.jpg" />
     <Content Include="images\about_us_BG.jpg" />
     <Content Include="images\AquaNox.png" />
@@ -161,6 +162,7 @@
     <Content Include="images\beach_play_bg_3.jpg" />
     <Content Include="images\BG\BeachplayBG.jpg" />
     <Content Include="images\BG\BEBG.jpg" />
+    <Content Include="images\bptest.jpg" />
     <Content Include="images\BS1.png" />
     <Content Include="images\BS2.png" />
     <Content Include="images\BS3.png" />
@@ -172,6 +174,9 @@
     <Content Include="images\diving_mask_bx.png" />
     <Content Include="images\ear-plug.png" />
     <Content Include="images\earplugs_bx.png" />
+    <Content Include="images\eptest.png" />
+    <Content Include="images\eptest2.png" />
+    <Content Include="images\eptest3.jpg" />
     <Content Include="images\flippers.png" />
     <Content Include="images\floaties.png" />
     <Content Include="images\Gloves.png" />
@@ -180,6 +185,10 @@
     <Content Include="images\goggles_bx.png" />
     <Content Include="images\hand-gloves.png" />
     <Content Include="images\homebg.png" />
+    <Content Include="images\hometest.jpeg" />
+    <Content Include="images\hometest.png" />
+    <Content Include="images\home_icon1.png" />
+    <Content Include="images\home_icon2.png" />
     <Content Include="images\image_1.jpg" />
     <Content Include="images\image_2.jpg" />
     <Content Include="images\image_3.jpg" />
@@ -196,6 +205,10 @@
     <Content Include="images\ljackets_bx.png" />
     <Content Include="images\long-sleeve.png" />
     <Content Include="images\mask %281%29.png" />
+    <Content Include="images\member\1.PNG" />
+    <Content Include="images\member\2.JPEG" />
+    <Content Include="images\member\3.JPG" />
+    <Content Include="images\member\4.JPG" />
     <Content Include="images\paddle-board 1.png" />
     <Content Include="images\Paddling board.jpg" />
     <Content Include="images\padleash_bx.png" />
@@ -228,6 +241,7 @@
     <Content Include="images\sandsun_tools\volleyball net.png" />
     <Content Include="images\scaps_bx.png" />
     <Content Include="images\Skokeling.jpg" />
+    <Content Include="images\skokelling.jpg" />
     <Content Include="images\Snorkellingg_bx.png" />
     <Content Include="images\snorkelling_bx.png" />
     <Content Include="images\snorkel_bx.png" />

@@ -4,138 +4,73 @@
     }
 
 
-   img {
+    img {
         vertical-align: middle;
     }
-
-    .imageInAdventureSection {  
-        float: left;
-        width: 100px;
-        height: 300px;
-        object-fit: cover;
-    }
-
-   
-
-    .slideContainer {
-        position: relative;
-        display:flex;
-    }
-
-    .mySlides {
-        display: none;
-    }
-
 
     .cursor {
         cursor: pointer;
     }
 
-    .prev,
-    .next {
-        cursor: pointer;
-        position: absolute;
-        top: 40%;
-        width: auto;
-        padding: 16px;
-        margin-top: -50px;
-        color: black !important;
-        font-weight: bold;
-        font-size: 20px;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-        -webkit-user-select: none;
-    }
 
     .adventContainerTab a {
         transition: .3s all ease !important;
         color: #080a23fa !important;
         font-size: x-large !important;
         text-decoration: underline !important;
-
     }
 
-    .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
+    .imageInAdventureSection {
+        float: left;
+        width: 100px;
+        height: 300px;
+        object-fit: cover;
     }
 
-
-        .prev:hover,
-        .next:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-
-
-    .numbertext {
-        color: 2f2f2;
-        font-size: 12px;
-        padding: 10px 20px;
-        position: absolute;
-        top: 0;
-    }
 
     .textonimage {
         position: absolute;
         z-index: 999;
         top: 85%; /* Adjust this value to move the positioned div up and down */
-        color: white;
+        color: whitesmoke;
         width: 90%; /* Set the width of the positioned div */
         line-height: 1.5;
-        
         font-weight: 400;
         font-size: 25px;
+        text-shadow: 2px 2px 4px #000000;
         justify-content: center;
     }
 
-    .row1:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
 
-
-    .column1 {
-        float: left;
-        width: 12.5%;
-        height: 10% !important;
-    }
-
-    .column2 {
-        float: left;
-        width: 50%;
-        height: 500px !important;
-    }
-
-    .customtooltip {
-        position: relative;
-        display: inline-block;
-        border-bottom: 1px dotted black;
-        border: outset;
-    }
     .customtooltip1 {
         position: relative;
         display: inline-block;
-       
+        border: outset;
+        margin-left: 10px;
     }
 
-        .customtooltip .tooltiptext {
-            visibility: hidden;
-            width: max-content;
-            background-color: #fff;
-            color: black;
-            text-align: center;
-            border-radius: 6px;
-            padding: 5px 0;
-            /* Position the tooltip */
-            position: absolute;
-            z-index: 1;
-        }
+    .customtooltip2 {
+        position: relative;
+        display: inline-block;
+    }
 
-        .customtooltip:hover .tooltiptext {
-            visibility: visible;
-        }
-    
+    .customtooltip1 .tooltiptext {
+        visibility: hidden;
+        width: max-content;
+        background-color: #fff;
+        color: black;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+    }
+
+    .customtooltip1:hover .tooltiptext {
+        visibility: visible;
+    }
+
     #myBtn {
         display: none;
         position: fixed;
@@ -154,15 +89,14 @@
 
         #myBtn:hover {
             background-color: #555;
-
         }
 
-    .sectionMargin{
-        padding:1em 0 !important;
+    .sectionMargin {
+        padding: 1em 0 !important;
     }
-    .section1Font {
+
+    .sectionFont {
         /* font-family: "Nunito Sans", Arial, sans-serif; */
-       
         font-size: large;
         line-height: 1.8;
         font-weight: 400;
@@ -170,39 +104,31 @@
         font-family: sans-serif;
         /* height: 100px; */
     }
-    .section2Font {
-        font-family: "Nunito Sans", Arial, sans-serif;
-       
-        line-height: 1.8;
-        font-weight: 400;
-        color: rgb(10 9 9);
 
-        /* height: 100px; */
-    }
+
     .customToolFont {
         font-family: "Nunito Sans", Arial, sans-serif;
         font-size: 15px;
     }
-   
 </style>
 
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-<section class="hero-wrap hero-wrap-2 responsive" style="        background-image: url('../images/BeachPlay.jpg');
+<section class="hero-wrap hero-wrap-2 responsive  " style="        background-image: url('../images/bptest.jpg');
 " data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-end">
             <div class="col-md-9 ftco-animate pb-5">
-                <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>Beach safety <i class="fa fa-chevron-right"></i></span></p>
-                
-                
+                <b style="font-size: 60px;color:#000;" class="mb-4">Beach play </b>
+                <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>Beach play <i class="fa fa-chevron-right"></i></span></p>
+
             </div>
         </div>
     </div>
 </section>
 </br>
-<section class="ftco-section sectionMargin section1Font">
+<section class="ftco-section sectionMargin sectionFont ">
     <div class="container">
         <div class=" wrap-about ftco-animate">
 
@@ -211,40 +137,40 @@
                 Well, some of them are same as the ground sports but they come with safer
                 and funnier way than the original ones while other lets you seek adventures that open your mind.
             </p>
-            <div class="heading-section pr-md-5" style="        color: #232020 !important;
+            <div class="heading-section pr-md-5 " style="        color: #232020 !important;
         font-size: xxx-large;
         font-style: normal;
        font-family: sans-serif;">
 
-                Adventure Sport
+                <h2> Water Activities</h2>
 
             </div>
         </div>
-     
-        <div class="row">
+
+        <div class="row ">
             <div class="col-md-12 ftco-animate">
                 <div class="row">
                     <div class="col-md-4" style="text-align: center; cursor:pointer;" onclick="openAdventTab('c1');">
-                        <img class="myLinkClass " src="~/images/swimming.jpg" width="99%" height="99%" alt="Swimming">
-                      <div class= textonimage> Swimming</div>
-                         
+                        <img class="myLinkClass " src="~/images/swimming.jpg" width="99%" height="99%" style="     box-shadow: 10px 10px 5px #c1b4b485 " alt="Swimming">
+                        <div class=textonimage> <b>Swimming</b></div>
+
                     </div>
                     <div class="col-md-4" style=" text-align: center ;cursor: pointer;" onclick="openAdventTab('c2');">
-                        <img class="myLinkClass " src="~/images/Paddling board.jpg" width="99%" height="99%" alt="Paddle Boarding">
-                      <div class= textonimage>
-                           Paddle-Boarding
+                        <img class="myLinkClass " src="~/images/Paddling board.jpg" width="99%" height="99%" style="     box-shadow: 10px 10px 5px #c1b4b485 " alt="Paddle Boarding">
+                        <div class=textonimage>
+                            <b>Paddle-Boarding</b>
+
                         </div>
                     </div>
                     <div class="col-md-4" style="text-align: center; cursor:pointer;" onclick="openAdventTab('c3');">
-                        <img class="myLinkClass " src="~/images/Skokeling.jpg" width="99%" height="99%" alt="Diving">
-                      <div class= textonimage>
-                            Snorkelling
-
+                        <img class="myLinkClass " src="~/images/skokelling.jpg" width="99%" height="99%" style="     box-shadow: 10px 10px 5px #c1b4b485 " alt="Snorkelling">
+                        <div class=textonimage>
+                            <b>Snorkelling</b>
                         </div>
                     </div>
                     <div id="information">
                         <div id="c1" class="adventContainerTab" style="        display: none;
-        background:#d0dbe6;
+        background: rgb(160, 220, 236);
         padding: 20px">
                             <span onclick="this.parentElement.style.display='none'" style="float: right; color: black; font-size: 35px; cursor: pointer;">&times;</span>
                             <h1><b>Swimming</b></h1>
@@ -261,11 +187,12 @@
                             </p>
 
                             <b>Gears Required:</b>
-                            <div class="customtooltip">
 
-                                <img src="~/images/beach.png" alt="swimsuit_beachnox" width="60" height="40"style="vertical-align:middle;margin:0px 30px">
-                              <div class="desc" style="font-size: medium;text-align: center;">
-                                    SwimSuits    
+                            <div class="customtooltip1 addBorder">
+
+                                <img src="~/images/beach.png" alt="swimsuit_beachnox" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
+                                <div class="desc" style="font-size: medium;text-align: center;">
+                                    SwimSuits
                                 </div>
                                 <span class="tooltiptext customToolFont ">
                                     <h3><b>SwimSuit</b></h3>
@@ -275,10 +202,10 @@
                                 </span>
                             </div>
 
-                            <div class="customtooltip">
+                            <div class="customtooltip1">
 
                                 <img src="~/images/rubber-ring.png" alt="floating_suits" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
-                              <div class="desc" style="font-size: medium;text-align: center;">
+                                <div class="desc" style="font-size: medium;text-align: center;">
                                     Floating Suits
                                 </div>
                                 <span class="tooltiptext customToolFont ">
@@ -288,10 +215,10 @@
                                     </br>but also helps children develop important swimming skills at beaches.
                                 </span>
                             </div>
-                            <div class="customtooltip">
+                            <div class="customtooltip1">
 
                                 <img src="~/images/long-sleeve.png" alt="rash_guards" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
-                              <div class="desc" style="font-size: medium;text-align: center;">
+                                <div class="desc" style="font-size: medium;text-align: center;">
                                     Rash Guards
                                 </div>
                                 <span class="tooltiptext customToolFont ">
@@ -302,11 +229,11 @@
 
                                 </span>
                             </div>
-                            <div class="customtooltip">
+                            <div class="customtooltip1">
 
                                 <img src="~/images/goggles_bx.png" alt="goggles" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
-                              <div class="desc" style="font-size: medium;text-align: center;">
-                                   Goggles
+                                <div class="desc" style="font-size: medium;text-align: center;">
+                                    Goggles
                                 </div>
                                 <span class="tooltiptext customToolFont ">
                                     <h3><b>Goggles</b></h3>
@@ -315,10 +242,10 @@
 
                                 </span>
                             </div>
-                            <div class="customtooltip">
+                            <div class="customtooltip1">
 
                                 <img src="~/images/swimming 8.png" alt="swimming_caps" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
-                              <div class="desc" style="font-size: medium;text-align: center;">
+                                <div class="desc" style="font-size: medium;text-align: center;">
                                     Swimming Caps
                                 </div>
                                 <span class="tooltiptext customToolFont ">
@@ -327,23 +254,24 @@
                                     </br> In open water, the cap makes it easier for other athletes </br>and rescuers to see the swimmer.
                                 </span>
                             </div>
-                           
-                            <div class="customtooltip">
+
+                            <div class="customtooltip1">
 
                                 <img src="~/images/ear-plug.png" alt="earplugs" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
-                              <div class="desc" style="font-size: medium;text-align: center;">
-                                   Ear Plugs
+                                <div class="desc" style="font-size: medium;text-align: center;">
+                                    Ear Plugs
                                 </div>
+                                
                                 <span class="tooltiptext customToolFont ">
                                     <h3><b>EarPlugs</b></h3>
-                                    Earplugs are designed according to the shape of the ear canal and </br>create a tight seal to prevent water from entering the canal.
-                                    </br> This allows children to swim comfortably without choking on the water.
+                                    Earplugs are designed according to the shape of </br>the ear canal.It creates a tight seal to</br> prevent water from entering the canal.
+                                    This allows children</br> to swim comfortably without choking on the water.
                                 </span>
                             </div>
-                            <div class="customtooltip">
+                            <div class="customtooltip1">
 
                                 <img src="~/images/towel 5.png" alt="Towel" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
-                              <div class="desc" style="font-size: medium;text-align: center;">
+                                <div class="desc" style="font-size: medium;text-align: center;">
                                     Towel
                                 </div>
                                 <span class="tooltiptext customToolFont ">
@@ -352,8 +280,8 @@
                                     </br>stay dry quickly after swimming.
                                 </span>
                             </div>
-                           
-                            </br> 
+
+                            </br>
                             <p>
                                 <b>Skills Achieved:</b>Basic swimming survival skills, including float, move through the water
                                 and control breathing under the water, Water and Beach Safety Knowledge.
@@ -362,13 +290,14 @@
                         </div>
 
                         <div id="c2" class="adventContainerTab" style="        display: none;
-        background:#d0dbe6;
+        background: rgb(85, 181, 171);
         padding: 20px">
                             <span onclick="this.parentElement.style.display='none'" style="float: right; color: black; font-size: 35px; cursor: pointer;">&times;</span>
-                            <h1><b>
-                     Paddle Boarding
-                            </b>
-                                
+                            <h1>
+                                <b>
+                                    Paddle Boarding
+                                </b>
+
                             </h1>
                             <p>
                                 Stand-up Paddle boarding(SUP) is an aquatic sport that everyone can enjoy, no matter your age, ability or size.
@@ -381,10 +310,10 @@
 
                             </p>
                             </br><b>Gears Required:</b>
-                            <div class="customtooltip">
+                            <div class="customtooltip1">
 
                                 <img src="~/images/leash (1).png" alt="paddle Leash" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
-                               <div class="desc" style="font-size: medium;text-align: center;">
+                                <div class="desc" style="font-size: medium;text-align: center;">
                                     Paddle Leash
                                 </div>
                                 <span class="tooltiptext customToolFont ">
@@ -394,25 +323,25 @@
 
                                 </span>
                             </div>
-                            
-                            <div class="customtooltip">
+
+                            <div class="customtooltip1">
 
                                 <img src="~/images/paddle-board 1.png" alt="SUP_Paddle" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
-                               <div class="desc" style="font-size: medium;text-align: center;">
-                                   Paddle Board
+                                <div class="desc" style="font-size: medium;text-align: center;">
+                                    Paddle Board
                                 </div>
                                 <span class="tooltiptext customToolFont ">
                                     <h3><b>Paddle Board</b></h3>
                                     Choosing the right paddle and board is essential for a child to </br> participate in vertical paddle surfing,
-                                   </br> which helps him to keep his balance and stay out of the water.
+                                    </br> which helps him to keep his balance and stay out of the water.
                                 </span>
                             </div>
-                           
-                            <div class="customtooltip">
+
+                            <div class="customtooltip1">
 
                                 <img src="~/images/life-jacket.png" alt="LifeJackets" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
-                               <div class="desc" style="font-size: medium;text-align: center;">
-                                   Life Jackets
+                                <div class="desc" style="font-size: medium;text-align: center;">
+                                    Life Jackets
                                 </div>
                                 <span class="tooltiptext customToolFont ">
                                     <h3><b>Life Jackets</b></h3>
@@ -422,12 +351,12 @@
                                     </br>of drowning, and save your life in an emergency.
                                 </span>
                             </div>
-                          
-                            <div class="customtooltip">
+
+                            <div class="customtooltip1">
 
                                 <img src="~/images/cap.png" alt="cap" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
-                               <div class="desc" style="font-size: medium;text-align: center;">
-                                  Paddle Hat
+                                <div class="desc" style="font-size: medium;text-align: center;">
+                                    Paddle Hat
                                 </div>
                                 <span class="tooltiptext customToolFont ">
                                     <h3><b>Paddle Hat</b></h3>
@@ -436,12 +365,12 @@
                                     Children can adjust the back buckle to make it more comfortable.
                                 </span>
                             </div>
-                         
-                            <div class="customtooltip">
+
+                            <div class="customtooltip1">
 
                                 <img src="~/images/sunscreen 1.png" alt="SunScreen" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
-                               <div class="desc" style="font-size: medium;text-align: center;">
-                                   SunScreen
+                                <div class="desc" style="font-size: medium;text-align: center;">
+                                    SunScreen
                                 </div>
                                 <span class="tooltiptext customToolFont ">
                                     <h3><b>Sunscreen</b></h3>
@@ -460,7 +389,7 @@
                         </div>
 
                         <div id="c3" class="adventContainerTab" style="        display: none;
-        background:#d0dbe6;
+        background: rgb(241 160 63);
         padding: 20px">
                             <span onclick="this.parentElement.style.display='none'" style="float: right; color: black; font-size: 35px; cursor: pointer;">&times;</span>
                             <h2><b><b>Snorkelling</b></b></h2>
@@ -475,11 +404,11 @@
 
                             </p>
                             </br><b>Gears Required:</b>
-                            <div class="customtooltip">
+                            <div class="customtooltip1">
 
                                 <img src="~/images/mask (1).png" alt="snorkel" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
-                               <div class="desc" style="font-size: medium;text-align: center;">
-                                   Snorkel
+                                <div class="desc" style="font-size: medium;text-align: center;">
+                                    Snorkel
                                 </div>
                                 <span class="tooltiptext customToolFont ">
                                     <h3><b>Snorkel</b></h3>
@@ -489,10 +418,10 @@
                                 </span>
                             </div>
 
-                            <div class="customtooltip">
+                            <div class="customtooltip1">
 
                                 <img src="~/images/goggles_(1).png" alt="diving mask" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
-                               <div class="desc" style="font-size: medium;text-align: center;">
+                                <div class="desc" style="font-size: medium;text-align: center;">
                                     Diving Mask
                                 </div>
                                 <span class="tooltiptext customToolFont ">
@@ -501,11 +430,11 @@
                                 </span>
                             </div>
 
-                            <div class="customtooltip">
+                            <div class="customtooltip1">
 
                                 <img src="~/images/flippers.png" alt="Swim Fins" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
-                               <div class="desc" style="font-size: medium;text-align: center;">
-                                   Swim Fins
+                                <div class="desc" style="font-size: medium;text-align: center;">
+                                    Swim Fins
                                 </div>
                                 <span class="tooltiptext customToolFont ">
                                     <h3><b>Swim Fins</b></h3>
@@ -514,10 +443,10 @@
                                 </span>
                             </div>
 
-                            <div class="customtooltip">
+                            <div class="customtooltip1">
 
                                 <img src="~/images/wetsuit.png" alt="wetsuits" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
-                               <div class="desc" style="font-size: medium;text-align: center;">
+                                <div class="desc" style="font-size: medium;text-align: center;">
                                     Wetsuits
                                 </div>
                                 <span class="tooltiptext customToolFont ">
@@ -528,10 +457,10 @@
                                 </span>
                             </div>
 
-                            <div class="customtooltip">
+                            <div class="customtooltip1">
 
                                 <img src="~/images/hand-gloves.png" alt="Gloves" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
-                               <div class="desc" style="font-size: medium;text-align: center;">
+                                <div class="desc" style="font-size: medium;text-align: center;">
                                     Gloves
                                 </div>
                                 <span class="tooltiptext customToolFont ">
@@ -552,18 +481,18 @@
                         </div>
                     </div>
 
-                    </div>
-
                 </div>
 
             </div>
 
         </div>
 
-    
+    </div>
+
+
 </section>
 
-<section class="ftco-section sectionMargin section2Font ">
+<section class="ftco-section sectionMargin sectionFont ">
     <div class="container">
         <div class=" wrap-about ftco-animate">
             <div class="heading-section pr-md-5 " style="color: #232020 !important;
@@ -573,48 +502,51 @@
 ">
 
 
-                Sand+Sun=Fun
+                <h2>  Shore Activities</h2>
 
 
 
 
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12 ftco-animate">
-                <div class="row">
+        <div class="row ">
+            <div class="col-md-14 ftco-animate ">
+                <div class="row ">
 
                     <div class="col-md-3" style="text-align: center; cursor:pointer;" onclick="openSandInfo1('d1');">
-                        <img class="myLinkClass " src="~/images/sandsun/treasure hunt.png" width="99%" height="99%" alt="Scavanger Hunt">
-                        <div class=textonimage> Scavanger Hunt</div>
+                        <img class="myLinkClass " src="~/images/sandsun/treasure hunt.png" width="99%" height="99%" style="     box-shadow: 10px 10px 5px #c1b4b485 " alt="Scavanger Hunt">
+                        <div class=textonimage> <b> Scavanger Hunt</b></div>
 
                     </div>
                     <div class="col-md-3" style="text-align: center; cursor:pointer;" onclick="openSandInfo1('d2');">
-                        <img class="myLinkClass " src="~/images/sandsun/sandcastle.png" width="99%" height="99%" alt="Sand Forts/Castles">
-                        <div class=textonimage> Sand Forts/Castles</div>
+                        <img class="myLinkClass " src="~/images/sandsun/sandcastle.png" width="99%" height="99%" style="     box-shadow: 10px 10px 5px #c1b4b485 " alt="Sand Forts/Castles">
+                        <div class=textonimage> <b> Sand Forts/Castles</b> </div>
 
                     </div>
                     <div class="col-md-3" style="text-align: center; cursor:pointer;" onclick="openSandInfo1('d3');">
-                        <img class="myLinkClass " src="~/images/sandsun/volley.png" width="99%" height="99%" alt="Beach VolleyBall">
-                        <div class=textonimage> Beach VolleyBall</div>
+                        <img class="myLinkClass " src="~/images/sandsun/volley.png" width="99%" height="99%" style="     box-shadow: 10px 10px 5px #c1b4b485 " alt="Beach VolleyBall">
+                        <div class=textonimage>  <b>Beach VolleyBall</b></div>
 
                     </div>
                     <div class="col-md-3" style="text-align: center; cursor:pointer;" onclick="openSandInfo1('d4');">
-                        <img class="myLinkClass " src="~/images/sandsun/sandsational.png" width="99%" height="99%" alt="SandSational">
+                        <img class="myLinkClass " src="~/images/sandsun/sandsational.png" width="99%" height="99%" style="     box-shadow: 10px 10px 5px #c1b4b485 " alt="SandSational">
                         <div class=textonimage>
-                            SandSational
+                            <b> SandSational</b>
+
                         </div>
 
                     </div>
 
 
                     <div id="information">
-                        <div id="d1" class="sandInfo1" style="        display: none; background:#d0dbe6; padding: 20px">
+                        <div id="d1" class="sandInfo1" style="        display: none;
+        background: rgb(200 175 81);
+        padding: 20px">
                             <span onclick="this.parentElement.style.display='none'" style="float: right; color: black; font-size: 35px; cursor: pointer;">&times;</span>
                             <h2><b>Beach Scavenger Hunt</b></h2>
                             <p>Hello explorer, we know you want to hunt the treasures of the beach. Well, go for a treasure hunt. Make sure, you have an adult who needs to host the hunt. He/she need to supply every participant with a list on paper and either a bucket or carrying container in which participant will keep the collected treasures. The list items can vary for different age groups like shells, crabs, wood, feather, etc. Let the host count the points in the end and announce the winner.</p>
                             <p><b>Tools Required:</b> A beach bucket to collect the treasures and list on paper of items (to be provided by an adult) </p>
-                            <div class="customtooltip">
+                            <div class="customtooltip2">
 
                                 <img src="~/images/sandsun_tools/bucket.png" alt="cap" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
                                 <div class="desc" style="font-size: medium;text-align: center;">
@@ -628,14 +560,16 @@
                             </p>
                         </div>
 
-                        <div id="d2" class="sandInfo1" style="        display: none; background:#d0dbe6; padding: 20px">
+                        <div id="d2" class="sandInfo1" style="        display: none;
+        background: rgb(187 158 145);
+        padding: 20px">
                             <span onclick="this.parentElement.style.display='none'" style="float: right; color: black; font-size: 35px; cursor: pointer;">&times;</span>
                             <h2><b>Sand Forts/Castles</b></h2>
                             <p>Without even digging the sand and then creating the castles or forts, is the beach trip complete. And why to restrict just to forts and castles, let your imagination come out and run wild and feel free to create whatever you desire and think. If building anything closer to water, oh dear make sure to click the photographs of your art before the waves wash them away.</p>
 
                             <p>
                                 <b>Tools Required:</b> Shovels, buckets, sticks etc
-                                <div class="customtooltip">
+                                <div class="customtooltip2">
 
                                     <img src="~/images/sandsun_tools/bucket.png" alt="cap" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
                                     <div class="desc" style="font-size: medium;text-align: center;">
@@ -643,7 +577,7 @@
                                     </div>
 
                                 </div>
-                                <div class="customtooltip">
+                                <div class="customtooltip2">
 
                                     <img src="~/images/sandsun_tools/shovel.png" alt="cap" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
                                     <div class="desc" style="font-size: medium;text-align: center;">
@@ -651,7 +585,7 @@
                                     </div>
 
                                 </div>
-                                <div class="customtooltip">
+                                <div class="customtooltip2">
 
                                     <img src="~/images/sandsun_tools/stick.png" alt="cap" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
                                     <div class="desc" style="font-size: medium;text-align: center;">
@@ -662,14 +596,16 @@
                             </p>
                             <p><b>Skills Achieved:</b> Creative thinking. </p>
                         </div>
-                        <div id="d3" class="sandInfo1" style="        display: none; background:#d0dbe6; padding: 20px">
+                        <div id="d3" class="sandInfo1" style="        display: none;
+        background: rgb(224 186 127);
+        padding: 20px">
                             <span onclick="this.parentElement.style.display='none'" style="float: right; color: black; font-size: 35px; cursor: pointer;">&times;</span>
                             <h2><b>Beach Volleyball</b></h2>
                             <p>It’s the perfect game to show your diving skills without getting hurt. For little one, the amazing part is you can even play with the beach ball and a towel (for net). Divide the teams and stand on the either sides of the net and then start you fun. Keep a count on the number of times you can throw the ball back and forth. Make sure you apply ample of sunscreen to avoid the UV rays. </p>
 
                             <p>
                                 <b>Tools Required:</b> Ball, net (some times patrolled beaches have nets set up)
-                                <div class="customtooltip">
+                                <div class="customtooltip2">
 
                                     <img src="~/images/sandsun_tools/beach-volleyball _ball.png" alt="cap" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
                                     <div class="desc" style="font-size: medium;text-align: center;">
@@ -677,7 +613,7 @@
                                     </div>
 
                                 </div>
-                                <div class="customtooltip">
+                                <div class="customtooltip2">
 
                                     <img src="~/images/sandsun_tools/volleyball net.png" alt="cap" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
                                     <div class="desc" style="font-size: medium;text-align: center;">
@@ -690,7 +626,9 @@
                                 <b>Skills Achieved:</b> Throwing and Volleying
                             </p>
                         </div>
-                        <div id="d4" class="sandInfo1" style="        display: none; background:#d0dbe6; padding: 20px">
+                        <div id="d4" class="sandInfo1" style="        display: none;
+        background: rgb(170 132 103);
+        padding: 20px">
                             <span onclick="this.parentElement.style.display='none'" style="float: right; color: black; font-size: 35px; cursor: pointer;">&times;</span>
                             <h2><b>SandSational</b></h2>
                             <p>
@@ -698,7 +636,7 @@
                             </p>
                             <p>
                                 <b>Tools Required:</b> Shovels and Buckets
-                                <div class="customtooltip">
+                                <div class="customtooltip2">
 
                                     <img src="~/images/sandsun_tools/bucket.png" alt="cap" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
                                     <div class="desc" style="font-size: medium;text-align: center;">
@@ -706,7 +644,7 @@
                                     </div>
 
                                 </div>
-                                <div class="customtooltip">
+                                <div class="customtooltip2">
 
                                     <img src="~/images/sandsun_tools/shovel.png" alt="cap" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
                                     <div class="desc" style="font-size: medium;text-align: center;">
@@ -720,34 +658,36 @@
                                 <b>Skills Achieved:</b> Lowering and lifting objects
                             </p>
                         </div>
-           
+
 
                     </div>
 
 
                     <div class="col-md-3" style="text-align: center; cursor:pointer;" onclick="openSandInfo2('d5');">
-                        <img class="myLinkClass " src="~/images/sandsun/Bucket race.png" width="99%" height="99%" alt="Bucket Race">
-                        <div class=textonimage> Bucket Race</div>
+                        <img class="myLinkClass " src="~/images/sandsun/Bucket race.png" width="99%" height="99%" style="     box-shadow: 10px 10px 5px #c1b4b485 " alt="Bucket Race">
+                        <div class=textonimage><b>Bucket Race</b> </div>
 
                     </div>
                     <div class="col-md-3" style="text-align: center; cursor:pointer;" onclick="openSandInfo2('d6');">
-                        <img class="myLinkClass " src="~/images/sandsun/frisbee.png" width="99%" height="99%" alt="Swimming">
-                        <div class=textonimage> Bucket Race</div>
+                        <img class="myLinkClass " src="~/images/sandsun/frisbee.png" width="99%" height="99%" style="     box-shadow: 10px 10px 5px #c1b4b485 " alt="Frisbee">
+                        <div class=textonimage> <b>Frisbee</b> </div>
 
                     </div>
                     <div class="col-md-3" style="text-align: center; cursor:pointer;" onclick="openSandInfo2('d7');">
-                        <img class="myLinkClass " src="~/images/sandsun/tug.png" width="99%" height="99%" alt="Tug">
-                        <div class=textonimage> Tug </div>
+                        <img class="myLinkClass " src="~/images/sandsun/tug.png" width="99%" height="99%" style="     box-shadow: 10px 10px 5px #c1b4b485 " alt="Tug">
+                        <div class=textonimage> <b> Tug Of War</b> </div>
 
                     </div>
                     <div class="col-md-3" style="text-align: center; cursor:pointer;" onclick="openSandInfo2('d8');">
-                        <img class="myLinkClass " src="~/images/sandsun/Hopscotch.png" width="99%" height="99%" alt="Hopscotch">
-                        <div class=textonimage> HopScotch</div>
+                        <img class="myLinkClass " src="~/images/sandsun/Hopscotch.png" width="99%" height="99%" style="     box-shadow: 10px 10px 5px #c1b4b485 " alt="Hopscotch">
+                        <div class=textonimage> <b>HopScotch</b></div>
 
                     </div>
                     <div id="information">
-             
-                        <div id="d5" class="sandInfo2" style="        display: none; background:#d0dbe6; padding: 20px">
+
+                        <div id="d5" class="sandInfo2" style="        display: none;
+        background: rgb(221 196 134);
+        padding: 20px">
                             <span onclick="this.parentElement.style.display='none'" style="float: right; color: black; font-size: 35px; cursor: pointer;">&times;</span>
                             <h2><b>Bucket Race</b></h2>
                             <p>
@@ -757,7 +697,7 @@
                             </p>
                             <p>
                                 <b>Tools Required:</b> A Bucket and Carrying cup/container
-                                <div class="customtooltip">
+                                <div class="customtooltip2">
 
                                     <img src="~/images/sandsun_tools/bucket.png" alt="cap" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
                                     <div class="desc" style="font-size: medium;text-align: center;">
@@ -769,7 +709,9 @@
                                 <b>Skills Achieved:</b> Balance
                             </p>
                         </div>
-                        <div id="d6" class="sandInfo2" style="        display: none; background:#d0dbe6; padding: 20px">
+                        <div id="d6" class="sandInfo2" style="        display: none;
+        background: rgb(216 196 187);
+        padding: 20px">
                             <span onclick="this.parentElement.style.display='none'" style="float: right; color: black; font-size: 35px; cursor: pointer;">&times;</span>
                             <h2><b>Beach Frisbee</b></h2>
                             <p>
@@ -780,7 +722,7 @@
                             </p>
                             <p>
                                 <b>Tools Required:</b> Frisbees
-                                <div class="customtooltip">
+                                <div class="customtooltip2">
 
                                     <img src="~/images/sandsun_tools/frisbee.png" alt="cap" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
                                     <div class="desc" style="font-size: medium;text-align: center;">
@@ -794,7 +736,9 @@
                                 <b>Skills Achieved:</b> Throwing and Aiming
                             </p>
                         </div>
-                        <div id="d7" class="sandInfo2" style="        display: none; background:#d0dbe6; padding: 20px">
+                        <div id="d7" class="sandInfo2" style="        display: none;
+        background: #c9a46e;
+        padding: 20px">
                             <span onclick="this.parentElement.style.display='none'" style="float: right; color: black; font-size: 35px; cursor: pointer;">&times;</span>
                             <h2><b>Tug of War</b></h2>
                             <p>
@@ -803,7 +747,7 @@
                             <p>
                                 <b>Tools Required:</b> Rope or Towels
 
-                                <div class="customtooltip">
+                                <div class="customtooltip2">
 
                                     <img src="~/images/sandsun_tools/rope.png" alt="cap" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
                                     <div class="desc" style="font-size: medium;text-align: center;">
@@ -811,7 +755,7 @@
                                     </div>
 
                                 </div>
-                                <div class="customtooltip">
+                                <div class="customtooltip2">
 
                                     <img src="~/images/sandsun_tools/towel.png" alt="cap" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
                                     <div class="desc" style="font-size: medium;text-align: center;">
@@ -830,7 +774,7 @@
                             <h2><b>Beach Scavenger Hunt</b></h2>
                             <p>Hello explorer, we know you want to hunt the treasures of the beach. Well, go for a treasure hunt. Make sure, you have an adult who needs to host the hunt. He/she need to supply every participant with a list on paper and either a bucket or carrying container in which participant will keep the collected treasures. The list items can vary for different age groups like shells, crabs, wood, feather, etc. Let the host count the points in the end and announce the winner.</p>
                             <p><b>Tools Required:</b> A beach bucket to collect the treasures and list on paper of items (to be provided by an adult) </p>
-                            <div class="customtooltip">
+                            <div class="customtooltip2">
 
                                 <img src="~/images/sandsun_tools/bucket.png" alt="cap" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
                                 <div class="desc" style="font-size: medium;text-align: center;">
@@ -850,18 +794,16 @@
 
                     </div>
                 </div>
-                    </div>
             </div>
+        </div>
 
 
-                </div>
+    </div>
 </section>
 
 
 
 <script>
-    
-
     function openAdventTab(tabName) {
         var k, x;
         x = document.getElementsByClassName("adventContainerTab");
@@ -889,25 +831,24 @@
     }
 
     //Get the button
-var mybutton = document.getElementById("myBtn");
+    var mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
+    // When the user scrolls down 20px from the top of the document, show the button
 
-window.onscroll = function() {scrollFunction()};
+    window.onscroll = function () { scrollFunction() };
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-</script>
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }</script>
 
 

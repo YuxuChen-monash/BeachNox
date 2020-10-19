@@ -33,13 +33,13 @@
 
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="~/Home/Index" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="~/Home/BeachSafety" class="nav-link">Beach Safety</a></li>
-                    <li class="nav-item"><a href="~/Home/Quiz" class="nav-link">Beach Safety Quiz</a></li>
-                    <li class="nav-item"><a href="~/Home/Map" class="nav-link">Explore Beach</a></li>
-                    <li class="nav-item"><a href="~/Home/BeachPlay" class="nav-link">Beach Play</a></li>
+                    <li class="nav-item"><a href="~/Home/Index" class="nav-link" style="font-size:18px">Home</a></li>
+                    <li class="nav-item"><a href="~/Home/BeachSafety" class="nav-link"style="font-size:18px">Beach Safety</a></li>
+                    <li class="nav-item"><a href="~/Home/Quiz" class="nav-link" style="font-size:18px">Beach Safety Quiz</a></li>
+                    <li class="nav-item"><a href="~/Home/Map" class="nav-link" style="font-size:18px">Explore Beach</a></li>
+                    <li class="nav-item"><a href="~/Home/BeachPlay" class="nav-link" style="font-size:18px">Beach Play</a></li>
                     <!--<li class="nav-item"><a href="~/Home/Gear" class="nav-link">Know your gear</a></li>-->
-                    <li class="nav-item"><a href="~/Home/About" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="~/Home/About" class="nav-link" style="font-size:18px">About Us</a></li>
                 </ul>
             </div>
         </div>
@@ -49,7 +49,7 @@
     <div>
         @RenderBody()
 
-        <footer style="background:#000">
+        @*<footer style="background:#000">
             <div class="container">
                 <div class="row ">
                     <div class="col-md-6 mt-2" style="text-align: center;">
@@ -63,6 +63,49 @@
                             <h2 class="ftco-heading-2" style="color:#FFF;text-align: center;">About Us</h2>
                         </a>
                     </div>
+                </div>
+            </div>
+        </footer>*@
+
+        <footer class="ftco-footer ftco-section">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-2"></div>
+
+                    <div class="col-md">
+                        <div class="ftco-footer-widget mb-4 ml-md-4">
+                            <h2 class="ftco-heading-2">LINKS LIST</h2>
+                            <ul class="list-unstyled">
+                                <li class="nav-item"><a href="~/Home/Index" class="nav-link" style="font-size:18px">Home</a></li>
+                                <li class="nav-item"><a href="~/Home/BeachSafety" class="nav-link" style="font-size:18px">Beach Safety</a></li>
+                                <li class="nav-item"><a href="~/Home/Quiz" class="nav-link" style="font-size:18px">Beach Safety Quiz</a></li>
+                                <li class="nav-item"><a href="~/Home/Map" class="nav-link" style="font-size:18px">Explore Beach</a></li>
+                                <li class="nav-item"><a href="~/Home/BeachPlay" class="nav-link" style="font-size:18px">Beach Play</a></li>
+                                <!--<li class="nav-item"><a href="~/Home/Gear" class="nav-link">Know your gear</a></li>-->
+                                <li class="nav-item"><a href="~/Home/About" class="nav-link" style="font-size:18px">About Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="ftco-footer-widget mb-4">
+                            <h2 class="ftco-heading-2">CONTACT US</h2>
+
+                            <p>customercare.beachnox12@gmail.com</p>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="ftco-footer-widget mb-4">
+                            <h2 class="ftco-heading-2">BeachNox</h2>
+                            <div class="col-md-6 mt-2">
+                                <a class="navbar-brand" href="../Home/Index">
+                                    <img src="../images/LOGO4.png" width="80px" height="80px" />
+                                </a>
+                            </div>
+                            <p>© 2020 Team MA07</p>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </footer>
