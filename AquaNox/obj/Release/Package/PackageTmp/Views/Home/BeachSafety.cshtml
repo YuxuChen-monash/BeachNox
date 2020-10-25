@@ -1,14 +1,50 @@
-﻿<p>
+﻿<style type="text/css">
 
-    <br />
-    <br />
-    <br />
-    <br />
-</p>
+    @@media all and (min-width: 800px) {
+        .deskContent {
+            display: block;
+        }
+
+        .phoneContent {
+            display: none;
+        }
+    }
+
+    @@media all and (max-width: 800px) {
+        .deskContent {
+            display: none;
+        }
+
+        .phoneContent {
+            display: block;
+        }
+    }
+</style>
 
 
-<div style="width: 100%;">
-    <div style="position: relative; padding-bottom: 50.00%; padding-top: 0; height: 0;">
-        <iframe frameborder="0" width="1600" height="800" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/5f7bd06b25a8bd0febaa68f2" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe>
+<div class="deskContent">
+    <p>
+
+        <br />
+        <br />
+        <br />
+        <br />
+    </p>
+    <div style="width: 100%;">
+        <div style="position: relative; padding-bottom: 50.00%; padding-top: 0; height: 0;">
+            <iframe frameborder="0" width="1600" height="800" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/5f7bd06b25a8bd0febaa68f2" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe>
+        </div>
     </div>
 </div>
+<div class="phoneContent">
+    <div style="width: 100%;">
+        <div style="position: relative; padding-bottom: 141.40%; padding-top: 0; height: 0;">
+            <iframe frameborder="0" width="1000" height="1414" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/5f8ce1d3f3bea91000025dee" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> 
+        </div> 
+    </div>
+</div>
+
+
+
+
+
