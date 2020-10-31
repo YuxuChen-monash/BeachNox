@@ -608,11 +608,9 @@
     <Content Include="scss\style.scss" />
     <Content Include="Views\Home\BeachSafety.cshtml" />
     <Content Include="Views\Home\Quiz.cshtml" />
-    <Content Include="Views\Home\Gear.cshtml" />
     <Content Include="Views\Home\BeachDay.cshtml" />
     <Content Include="Views\Home\Map.cshtml" />
     <Content Include="Views\Home\BeachPlay.cshtml" />
-    <Content Include="Views\Home\test.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
