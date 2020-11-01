@@ -1,18 +1,18 @@
-﻿<style type="text/css">
+﻿<!---->
+<style type="text/css">
+    /*  on hover the images, it changes opacity*/
     .myLinkClass:hover {
         opacity: 0.7;
     }
 
-
     img {
         vertical-align: middle;
     }
-
+    /*Change cursor while on image*/
     .cursor {
         cursor: pointer;
     }
-
-
+    /* the container tab for all the images*/
     .adventContainerTab a {
         transition: .3s all ease !important;
         color: #080a23fa !important;
@@ -26,8 +26,7 @@
         height: 300px;
         object-fit: cover;
     }
-
-
+    /* To write a caption on top of the images*/
     .textonimage {
         position: absolute;
         z-index: 999;
@@ -35,13 +34,13 @@
         color: whitesmoke;
         width: 90%; /* Set the width of the positioned div */
         line-height: 1.5;
-        font-weight: 400;
+        s font-weight: 400;
         font-size: 25px;
         text-shadow: 2px 2px 4px #000000;
         justify-content: center;
     }
 
-
+    /* start: Tooltip configuration*/
     .customtooltip1 {
         position: relative;
         display: inline-block;
@@ -62,7 +61,6 @@
         text-align: center;
         border-radius: 6px;
         padding: 5px 0;
-        /* Position the tooltip */
         position: absolute;
         z-index: 1;
     }
@@ -70,7 +68,9 @@
     .customtooltip1:hover .tooltiptext {
         visibility: visible;
     }
+    /*end*/
 
+    /* The scroll up button */
     #myBtn {
         display: none;
         position: fixed;
@@ -94,26 +94,20 @@
     .sectionMargin {
         padding: 1em 0 !important;
     }
-
+    /* Provide  font throughout*/
     .sectionFont {
-        /* font-family: "Nunito Sans", Arial, sans-serif; */
         font-size: large;
         line-height: 1.8;
         font-weight: 400;
         color: rgb(10 9 9);
         font-family: sans-serif;
-        /* height: 100px; */
-    }
-
-
-    .customToolFont {
-        font-family: "Nunito Sans", Arial, sans-serif;
-        font-size: 15px;
     }
 </style>
 
+<!-- The user scrolls up when they click on the Top Button -->
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
+<!-- Section for the banner picture on the top-->
 <section class="hero-wrap hero-wrap-2 responsive  " style="        background-image: url('../images/bptest.jpg');
 " data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
@@ -121,14 +115,18 @@
         <div class="row no-gutters slider-text js-fullheight align-items-end">
             <div class="col-md-9 ftco-animate pb-5">
                 <b style="font-size: 60px;color:#000;" class="mb-4">Beach play </b>
-                <p class="breadcrumbs"><span class="mr-2"><a href="~/Home/Index">Home <i class="fa fa-chevron-right"></i></a></span>
-                <span>Beach play </span></p>
+                <p class="breadcrumbs">
+                    <span class="mr-2"><a href="~/Home/Index">Home <i class="fa fa-chevron-right"></i></a></span>
+                    <span>Beach play </span>
+                </p>
 
             </div>
         </div>
     </div>
 </section>
 </br>
+
+<!-- Section for the Water Activities-->
 <section class="ftco-section sectionMargin sectionFont ">
     <div class="container">
         <div class=" wrap-about ftco-animate">
@@ -147,10 +145,11 @@
 
             </div>
         </div>
-
+        <!-- Display the images in the form of row-->
         <div class="row ">
             <div class="col-md-12 ftco-animate">
                 <div class="row">
+                    <!-- Provide function to open the the tab on clicking the image-->
                     <div class="col-md-4" style="text-align: center; cursor:pointer;" onclick="openAdventTab('c1');">
                         <img class="myLinkClass " src="~/images/swimming.jpg" width="99%" height="99%" style="     box-shadow: 10px 10px 5px #c1b4b485 " alt="Swimming">
                         <div class=textonimage> <b>Swimming</b></div>
@@ -169,6 +168,7 @@
                             <b>Snorkelling</b>
                         </div>
                     </div>
+                    <!--The information inside the advent tab-->
                     <div id="information">
                         <div id="c1" class="adventContainerTab" style="        display: none;
         background: rgb(160, 220, 236);
@@ -188,13 +188,14 @@
                             </p>
 
                             <b>Gears Required:</b>
-
-                            <div class="customtooltip1 addBorder">
+                            <!--Provide customtooltip function-->
+                            <div class="customtooltip1 ">
 
                                 <img src="~/images/beach.png" alt="swimsuit_beachnox" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
                                 <div class="desc" style="font-size: medium;text-align: center;">
                                     SwimSuits
                                 </div>
+                                <!--The text inside the tooltip and the font styling-->
                                 <span class="tooltiptext customToolFont ">
                                     <h3><b>SwimSuit</b></h3>
                                     A swimsuit is an essential garment for water sports or water sports</br> such as swimming, diving, surfing.
@@ -202,13 +203,14 @@
                                     in coverage and material.
                                 </span>
                             </div>
-
+                            <!--Provide customtooltip function-->
                             <div class="customtooltip1">
 
                                 <img src="~/images/rubber-ring.png" alt="floating_suits" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
                                 <div class="desc" style="font-size: medium;text-align: center;">
                                     Floating Suits
                                 </div>
+                                <!--The text inside the tooltip and the font styling-->
                                 <span class="tooltiptext customToolFont ">
                                     <h3><b>Floatation Suit</b></h3>
                                     The floatation suit provides additional protection and is designed</br> to build confidence and comfort in the water.
@@ -216,12 +218,14 @@
                                     </br>but also helps children develop important swimming skills at beaches.
                                 </span>
                             </div>
+                            <!--Provide customtooltip function-->
                             <div class="customtooltip1">
 
                                 <img src="~/images/long-sleeve.png" alt="rash_guards" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
                                 <div class="desc" style="font-size: medium;text-align: center;">
                                     Rash Guards
                                 </div>
+                                <!--The text inside the tooltip and the font styling-->
                                 <span class="tooltiptext customToolFont ">
                                     <h3><b>Rash Guard</b></h3>
                                     Rash Guards are designed to be worn over swimsuits to</br> provide additional sun protection and
@@ -230,12 +234,14 @@
 
                                 </span>
                             </div>
+                            <!--Provide customtooltip function-->
                             <div class="customtooltip1">
 
                                 <img src="~/images/goggles_bx.png" alt="goggles" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
                                 <div class="desc" style="font-size: medium;text-align: center;">
                                     Goggles
                                 </div>
+                                <!--The text inside the tooltip and the font styling-->
                                 <span class="tooltiptext customToolFont ">
                                     <h3><b>Goggles</b></h3>
                                     Goggles are a necessary for swimmers and can</br> protect a child's eyes from itching.
@@ -243,38 +249,42 @@
 
                                 </span>
                             </div>
+                            <!--Provide customtooltip function-->
                             <div class="customtooltip1">
 
                                 <img src="~/images/swimming 8.png" alt="swimming_caps" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
                                 <div class="desc" style="font-size: medium;text-align: center;">
                                     Swimming Caps
                                 </div>
+                                <!--The text inside the tooltip and the font styling-->
                                 <span class="tooltiptext customToolFont ">
                                     <h3><b>Swimming Caps</b></h3>
                                     Swimming caps keep hair away from the face,</br> reducing drag and increasing hydrodynamics.
                                     </br> In open water, the cap makes it easier for other athletes </br>and rescuers to see the swimmer.
                                 </span>
                             </div>
-
+                            <!--Provide customtooltip function-->
                             <div class="customtooltip1">
 
                                 <img src="~/images/ear-plug.png" alt="earplugs" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
                                 <div class="desc" style="font-size: medium;text-align: center;">
                                     Ear Plugs
                                 </div>
-                                
+                                <!--The text inside the tooltip and the font styling-->
                                 <span class="tooltiptext customToolFont ">
                                     <h3><b>EarPlugs</b></h3>
                                     Earplugs are designed according to the shape of </br>the ear canal.It creates a tight seal to</br> prevent water from entering the canal.
                                     This allows children</br> to swim comfortably without choking on the water.
                                 </span>
                             </div>
+                            <!--Provide customtooltip function-->
                             <div class="customtooltip1">
 
                                 <img src="~/images/towel 5.png" alt="Towel" width="60" height="40" style="vertical-align:middle;margin:0px 30px">
                                 <div class="desc" style="font-size: medium;text-align: center;">
                                     Towel
                                 </div>
+                                <!--The text inside the tooltip and the font styling-->
                                 <span class="tooltiptext customToolFont ">
                                     <h3><b>Towels</b></h3>
                                     Keep a fluffy towel handy to help your child
@@ -493,6 +503,7 @@
 
 </section>
 
+<!-- Section for the Shore Activities-->
 <section class="ftco-section sectionMargin sectionFont ">
     <div class="container">
         <div class=" wrap-about ftco-animate">
@@ -780,10 +791,10 @@
                                 shells. Sand might be a little hot in summers, so do not forget to wear
                                 your flip flops.
                             </p>
-                            <p><b>Tools Required:</b>none </p>
+                            <p><b>Tools Required:</b> Throwing and Hoping </p>
 
                             <p>
-                                Skills Achieved: Throwing,Hoping and Observational skills.
+                                Skills Achieved: Throwing and HopingObservational skills.
 
                             </p>
                         </div>
@@ -801,9 +812,8 @@
     </div>
 </section>
 
-
-
-<script>
+<!--Includes the Javascript and the function-->
+<script>//Javascript to open the hidden container for water activities
     function openAdventTab(tabName) {
         var k, x;
         x = document.getElementsByClassName("adventContainerTab");
@@ -812,6 +822,7 @@
         }
         document.getElementById(tabName).style.display = "block";
     }
+    //Javascript to open the hidden container for shore activities part 1
 
     function openSandInfo1(tabName) {
         var k, x;
@@ -821,6 +832,9 @@
         }
         document.getElementById(tabName).style.display = "block";
     }
+
+    //Javascript to open the hidden container for shore activities part 2
+
     function openSandInfo2(tabName) {
         var k, x;
         x = document.getElementsByClassName("sandInfo2");
@@ -829,9 +843,6 @@
         }
         document.getElementById(tabName).style.display = "block";
     }
-
-    //Get the button
-    var mybutton = document.getElementById("myBtn");
 
     // When the user scrolls down 20px from the top of the document, show the button
 
@@ -846,6 +857,7 @@
     }
 
     // When the user clicks on the button, scroll to the top of the document
+
     function topFunction() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
