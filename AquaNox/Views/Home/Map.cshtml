@@ -253,7 +253,7 @@
     function initMap() {
         map = new google.maps.Map(document.getElementById("map"), {
             center: { lat: -38.062389, lng: 144.787066 },
-            zoom: 10
+            : 1zoom0
         })
     /* add the location mark on map */
         var markerBrighton = new google.maps.Marker({ position: { lat: -37.9311, lng: 144.9888 }, map: map, icon: "../images/MAPICONS/iconT.png" });
@@ -710,7 +710,13 @@
 
 
         /*Add the clic function to the location on the map*/
-        markerBrighton.addListener("click", function () { showSection("row-1"); document.getElementById("api-info").setAttribute("src", "https://cdnres.willyweather.com.au/widget/loadView.html?id=60006"); document.getElementById("tip1").style.display = 'none'; document.getElementById("df").style.display = 'none'; document.getElementById("bname").innerHTML = "Brighton"; })
+        markerBrighton.addListener("click", function ()
+        {
+            showSection("row-1");
+            document.getElementById("api-info").setAttribute("src", "https://cdnres.willyweather.com.au/widget/loadView.html?id=60006");
+            document.getElementById("tip1").style.display = 'none'; document.getElementById("df").style.display = 'none';
+            document.getElementById("bname").innerHTML = "Brighton";
+        })
         markerDendyStreet.addListener("click", function () { showSection("row-2"); document.getElementById("api-info").setAttribute("src", "https://cdnres.willyweather.com.au/widget/loadView.html?id=60007"); document.getElementById("tip1").style.display = 'none'; document.getElementById("df").style.display = 'none'; document.getElementById("bname").innerHTML = "Dendy Street"; })
         markerSomers.addListener("click", function () { showSection("row-3"); document.getElementById("api-info").setAttribute("src", "https://cdnres.willyweather.com.au/widget/loadView.html?id=60008"); document.getElementById("tip1").style.display = 'none'; document.getElementById("df").style.display = 'none'; document.getElementById("bname").innerHTML = "Somers"; })
         markerSkeletonCreek.addListener("click", function () { showSection("row-4"); document.getElementById("api-info").setAttribute("src", "https://cdnres.willyweather.com.au/widget/loadView.html?id=60009"); document.getElementById("tip1").style.display = 'none'; document.getElementById("df").style.display = 'none'; document.getElementById("bname").innerHTML = "Skeleton Creek"; })
