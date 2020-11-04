@@ -5,9 +5,15 @@ Our project aims to educate the young children aged from 10-12 years old assiste
 IED：Microsoft Visual studio 2019
 
 MANUAL SETUP
+
 ● Make sure the visual studio is already installed in the system .
+
 ● Download the code. 
+
 ● Locate the zip to a certain folder.
+
 ● Unzip the folder .
+
 ● Open the beachnox-master folder
+
 ● Click on the AquaNox.sln that will working in the Microsoft Visual studio 2019
