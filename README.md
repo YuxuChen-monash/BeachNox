@@ -17,3 +17,18 @@ MANUAL SETUP
 ● Open the beachnox-master folder
 
 ● Click on the AquaNox.sln that will working in the Microsoft Visual studio 2019
+
+The AquaNox is main forder of this project.
+
+css forder is the location of css fiel.
+js forder is the forder of js fiel.
+fonts forder is the forder of fonts fiel.
+and the picture of project use that is in the images forder 
+and the main code part is in views/Home/
+about.cshtml is the page of about
+beachplay.cshtml is the page of beach play 
+about.cshtml is the page of about
+beachsasfety .cshtml is the page of beach safety 
+index.cshtml is home page 
+map.cshtml is map page 
+quiz.cshtml is quiz page 
